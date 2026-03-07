@@ -1,9 +1,18 @@
 # Bin Zhang
 
-Working on **POP (Persona Object Protocol)**, a lightweight public draft protocol for portable persona objects in multimodal AI systems.
+Protocol-oriented research and draft standardization work around multimodal AI systems.
 
-## Current Focus
+## Current focus
 
-- POP repository: https://github.com/joy7758/persona-object-protocol
-- Concept DOI: https://doi.org/10.5281/zenodo.18898251
-- Current archive: https://doi.org/10.5281/zenodo.18898252
+- Persona Object Protocol (POP)
+- Agent Object Protocol (AOP)
+- AI audit / provenance / execution integrity
+
+## Primary entry
+
+- POP: https://github.com/joy7758/persona-object-protocol
+
+## Citation / archive
+
+- Concept DOI: 10.5281/zenodo.18898251
+- Version DOI: 10.5281/zenodo.18898252
