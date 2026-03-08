@@ -1,10 +1,12 @@
 # Bin Zhang
 
+## Digital Biosphere Architecture for Verifiable AI Systems
+
 Researcher-builder working on protocol drafts and infrastructure components for multimodal and agentic AI systems.
 
 My focus is on portable AI objects, execution integrity, resource governance, and machine-checkable evidence. The work sits between research and infrastructure: turning protocol ideas into specifications, repositories, and operational tooling.
 
-## AI Agent Infrastructure Stack
+## Architecture Layers
 
 ```text
 Persona Layer             -> Persona Object Protocol (POP)
