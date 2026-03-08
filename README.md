@@ -1,20 +1,46 @@
 # Bin Zhang
 
-Protocol drafts for multimodal and agentic AI systems.
+Researcher-builder working on protocol drafts and infrastructure components for multimodal and agentic AI systems.
 
-Skilled at turning protocol ideas into specs, repos, and machine-checkable evidence.
+My focus is on portable AI objects, execution integrity, resource governance, and machine-checkable evidence. The work sits between research and infrastructure: turning protocol ideas into specifications, repositories, and operational tooling.
 
-Repositories that feature portable AI objects:
+## AI Agent Infrastructure Stack
 
-* [Persona Object Protocol (POP)](https://github.com/joy7758/persona-object-protocol)
-* [Agent Object Protocol (AOP)](https://github.com/joy7758/agent-object-protocol)
-* [ARO Audit](https://github.com/joy7758/aro-audit)
+```text
+Persona Layer             -> Persona Object Protocol (POP)
+Agent Object Layer        -> Agent Object Protocol (AOP)
+Execution Integrity Layer -> ARO Audit
+Resource Governance Layer -> Token Governor
+```
 
-Archive links:
+## Core Repositories
 
-* [Concept DOI: 10.5281/zenodo.18898251](https://doi.org/10.5281/zenodo.18898251)
-* [Version DOI: 10.5281/zenodo.18898252](https://doi.org/10.5281/zenodo.18898252)
+* [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) - POP for portable persona objects in multimodal and agentic AI systems.
+* [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) - AOP for portable and executable agent objects.
+* [aro-audit](https://github.com/joy7758/aro-audit) - audit, provenance, and execution integrity for AI runs.
+* [token-governor](https://github.com/joy7758/token-governor) - token, cost, and resource governance tooling for AI systems.
+* [langchain-pop](https://github.com/joy7758/langchain-pop) - LangChain ecosystem integration for POP.
 
-Add this view counter to your profile, but don't tell the protocols:
+## Ecosystem Direction
 
-[![Hits](https://www.sproul.dev/api/gh-viewer)](https://www.sproul.dev/api/gh-viewer)
+The direction is not a set of isolated repositories, but an infrastructure path:
+
+`protocol -> SDK -> plugin -> framework integration -> ecosystem visibility`
+
+Current and planned ecosystem touchpoints include:
+
+* LangChain
+* LangGraph
+* future framework adapters
+
+## Evidence and Research
+
+* ORCID: [https://orcid.org/0009-0002-8861-1481](https://orcid.org/0009-0002-8861-1481)
+* Concept DOI: [https://doi.org/10.5281/zenodo.18898251](https://doi.org/10.5281/zenodo.18898251)
+* Version DOI: [https://doi.org/10.5281/zenodo.18898252](https://doi.org/10.5281/zenodo.18898252)
+
+## Current Focus
+
+* POP integration in the LangChain ecosystem
+* protocol-by-artifacts and machine-checkable evidence
+* runtime integrity and governance for AI agents
