@@ -10,6 +10,14 @@ Researcher-builder turning protocol ideas into operational controls for agentic 
 * [aro-audit](https://github.com/joy7758/aro-audit) - execution receipts and evidence for verifiable agent runs.
 * [god-spear](https://github.com/joy7758/god-spear) - trust gates for tools, files, and runtime environments.
 
+## Current Demo Entry Points
+
+Three small and composable runtime control demos for AI agents.
+
+* [Token Governor - Budget Window Demo](https://github.com/joy7758/token-governor/blob/main/docs/demos/budget-window-demo.md)
+* [ARO Audit - Execution Receipt Demo](https://github.com/joy7758/aro-audit/blob/main/docs/demos/execution-receipt-demo.md)
+* [God Spear - Trust Gate Demo](https://github.com/joy7758/god-spear/blob/main/docs/demos/trust-gate-demo.md)
+
 ## Protocol and Research Background
 
 * [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview for the broader ecosystem.
