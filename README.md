@@ -1,109 +1,79 @@
 # Bin Zhang
 
-Building infrastructure for AI agent governance and verifiable execution.
+Independent researcher exploring **governance infrastructure for AI agents**.
 
-Independent researcher building infrastructure for AI agent governance, execution integrity, and portable AI objects.
+My work focuses on how autonomous AI systems can become:
 
-This work explores how AI systems can become portable, auditable, and resource-governed through protocol design and operational tooling.
+- **Identifiable** (persona layer)
+- **Observable** (execution trace)
+- **Auditable** (evidence records)
+- **Governable** (runtime control)
 
-Narrative spine:
+---
 
-`Digital Biosphere -> Verifiable Digital Objects -> Execution Integrity -> Agent Governance`
+# AI Agent Governance Stack
 
-## Concept
+Minimal research architecture for auditable AI agents.
 
-AI systems are evolving from simple models to autonomous agent infrastructures.
+```mermaid
+flowchart TD
 
-This work explores the missing layers:
+A[Persona Layer<br>POP] --> B[Agent Runtime]
 
-`identity -> execution -> audit -> governance`
+B --> C[Execution Trace]
 
-## Main Repositories
+C --> D[Audit Evidence<br>ARO]
 
-* [token-governor](https://github.com/joy7758/token-governor) - budget windows and cost governance for agent runs.
-* [aro-audit](https://github.com/joy7758/aro-audit) - execution receipts and evidence for verifiable agent runs.
-* [god-spear](https://github.com/joy7758/god-spear) - trust gates for tools, files, and runtime environments.
-
-## Current Demo Entry Points
-
-Three small and composable runtime control demos for AI agents.
-
-* [Token Governor - Budget Window Demo](https://github.com/joy7758/token-governor/blob/main/docs/demos/budget-window-demo.md)
-* [ARO Audit - Execution Receipt Demo](https://github.com/joy7758/aro-audit/blob/main/docs/demos/execution-receipt-demo.md)
-* [God Spear - Trust Gate Demo](https://github.com/joy7758/god-spear/blob/main/docs/demos/trust-gate-demo.md)
-
-Together, these adapters sketch a small runtime control chain: preflight gate, budget gate, and post-run receipt.
-
-## Runtime Control Chain
-
-A small control chain for agent runtimes: before-tool trust gate, before-model budget gate, and post-run receipt.
-
-* God Spear MCP Gate - preflight trust gate
-* Token Governor LangChain Middleware - budget gate before model execution
-* ARO Audit LangChain Receipt - compact post-run receipt after execution
-
-## First External Adapter
-
-* [God Spear MCP Gate - minimal preflight trust gate for MCP-style requests](https://github.com/joy7758/god-spear-mcp-gate)
-
-## Second External Adapter
-
-* [Token Governor LangChain Middleware - thin budget-window middleware for LangChain agents on LangGraph](https://github.com/joy7758/token-governor-langchain-middleware)
-
-## Third External Adapter
-
-* [ARO Audit LangChain Receipt - compact post-run receipt emitter for LangChain agents on LangGraph](https://github.com/joy7758/aro-audit-langchain-receipt)
-
-## Protocol and Research Background
-
-* [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview for the broader ecosystem.
-* [verifiable-dpp-agent-demo](https://github.com/joy7758/digital-biosphere-architecture/tree/main/demo/verifiable-dpp-agent-demo) - runnable end-to-end demo: DPP object -> agent result -> audit record -> MVK input -> public evidence summary.
-* [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) - POP for portable persona objects in multimodal and agentic AI systems.
-* [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) - AOP for portable and executable agent objects.
-* Narrative spine: `Digital Biosphere -> Verifiable Digital Objects -> Execution Integrity -> Agent Governance`
-
-## Architecture Layers
-
-```text
-Persona Layer    -> Persona Object Protocol (POP)
-Agent Layer      -> Agent Object Protocol (AOP)
-Data Space Layer -> RedRock OpenDPP
-Audit Layer      -> ARO-Audit
-Proof Kernel     -> MVK
+D --> E[Governance Controls<br>Token Governor]
 ```
 
-Supporting governance:
+---
 
-```text
-Resource Governance -> Token Governor
-```
+# Core Projects
 
-## Supporting Repositories
+### Persona Object Protocol (POP)
 
-* [redrock-opendpp-core](https://github.com/joy7758/redrock-opendpp-core) - DPP-style object model and integrity core.
-* [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) - minimal verification kernel.
+Portable persona layer for AI agents.
 
-## Ecosystem Direction
+https://github.com/joy7758/persona-object-protocol
 
-The direction is an adoption path rather than a set of isolated repositories:
+---
 
-`protocol -> SDK -> plugin -> framework integration -> ecosystem visibility`
+### ARO Audit
 
-Current and planned ecosystem touchpoints include:
+Evidence generation and audit records for agent execution.
 
-* LangChain
-* LangGraph
-* MCP
-* future framework adapters
+https://github.com/joy7758/aro-audit
 
-## Evidence and Research
+---
 
-* ORCID: [https://orcid.org/0009-0002-8861-1481](https://orcid.org/0009-0002-8861-1481)
-* Concept DOI: [https://doi.org/10.5281/zenodo.18898251](https://doi.org/10.5281/zenodo.18898251)
-* Version DOI: [https://doi.org/10.5281/zenodo.18898252](https://doi.org/10.5281/zenodo.18898252)
+### Token Governor
 
-## Current Focus
+Runtime token cost and policy control for AI agents.
 
-* runtime controls and governance for AI agents
-* protocol-by-artifacts and machine-checkable evidence
-* framework adapters and workflow integrations
+https://github.com/joy7758/token-governor
+
+---
+
+### Verifiable Agent Demo
+
+Minimal end-to-end governance pipeline demo.
+
+https://github.com/joy7758/verifiable-agent-demo
+
+---
+
+# Research Direction
+
+Current focus:
+
+* AI Agent Observability
+* Agent Governance Architecture
+* Verifiable Agent Execution
+* Digital Object Infrastructure (FDO)
+
+---
+
+# Contact
+
+GitHub discussions and issues welcome.
