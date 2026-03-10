@@ -1,8 +1,22 @@
 # Bin Zhang
 
-Building runtime controls for AI agents: budget windows, trust gates, and execution receipts.
+Building infrastructure for AI agent governance and verifiable execution.
 
-Researcher-builder turning protocol ideas into operational controls for agentic AI systems. Current public work emphasizes runtime components that teams can adopt directly, with protocol and research threads kept as background context.
+Independent researcher building infrastructure for AI agent governance, execution integrity, and portable AI objects.
+
+This work explores how AI systems can become portable, auditable, and resource-governed through protocol design and operational tooling.
+
+Narrative spine:
+
+`Digital Biosphere -> Verifiable Digital Objects -> Execution Integrity -> Agent Governance`
+
+## Concept
+
+AI systems are evolving from simple models to autonomous agent infrastructures.
+
+This work explores the missing layers:
+
+`identity -> execution -> audit -> governance`
 
 ## Main Repositories
 
@@ -46,7 +60,7 @@ A small control chain for agent runtimes: before-tool trust gate, before-model b
 * [verifiable-dpp-agent-demo](https://github.com/joy7758/digital-biosphere-architecture/tree/main/demo/verifiable-dpp-agent-demo) - runnable end-to-end demo: DPP object -> agent result -> audit record -> MVK input -> public evidence summary.
 * [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) - POP for portable persona objects in multimodal and agentic AI systems.
 * [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) - AOP for portable and executable agent objects.
-* Narrative spine: `Digital Biosphere -> Verifiable Digital Objects -> Execution Integrity`
+* Narrative spine: `Digital Biosphere -> Verifiable Digital Objects -> Execution Integrity -> Agent Governance`
 
 ## Architecture Layers
 
