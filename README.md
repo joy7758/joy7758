@@ -18,6 +18,8 @@ Three small and composable runtime control demos for AI agents.
 * [ARO Audit - Execution Receipt Demo](https://github.com/joy7758/aro-audit/blob/main/docs/demos/execution-receipt-demo.md)
 * [God Spear - Trust Gate Demo](https://github.com/joy7758/god-spear/blob/main/docs/demos/trust-gate-demo.md)
 
+Together, these adapters sketch a small runtime control chain: preflight gate, budget gate, and post-run receipt.
+
 ## First External Adapter
 
 * [God Spear MCP Gate - minimal preflight trust gate for MCP-style requests](https://github.com/joy7758/god-spear-mcp-gate)
@@ -25,6 +27,10 @@ Three small and composable runtime control demos for AI agents.
 ## Second External Adapter
 
 * [Token Governor LangChain Middleware - thin budget-window middleware for LangChain agents on LangGraph](https://github.com/joy7758/token-governor-langchain-middleware)
+
+## Third External Adapter
+
+* [ARO Audit LangChain Receipt - compact post-run receipt emitter for LangChain agents on LangGraph](https://github.com/joy7758/aro-audit-langchain-receipt)
 
 ## Protocol and Research Background
 
