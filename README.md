@@ -20,6 +20,14 @@ Three small and composable runtime control demos for AI agents.
 
 Together, these adapters sketch a small runtime control chain: preflight gate, budget gate, and post-run receipt.
 
+## Runtime Control Chain
+
+A small control chain for agent runtimes: before-tool trust gate, before-model budget gate, and post-run receipt.
+
+* God Spear MCP Gate - preflight trust gate
+* Token Governor LangChain Middleware - budget gate before model execution
+* ARO Audit LangChain Receipt - compact post-run receipt after execution
+
 ## First External Adapter
 
 * [God Spear MCP Gate - minimal preflight trust gate for MCP-style requests](https://github.com/joy7758/god-spear-mcp-gate)
