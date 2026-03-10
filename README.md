@@ -1,15 +1,21 @@
 # Bin Zhang
 
-## Digital Biosphere Architecture for Verifiable AI Systems
+Building runtime controls for AI agents: budget windows, trust gates, and execution receipts.
 
-Researcher-builder working on protocol drafts and infrastructure components for multimodal and agentic AI systems.
+Researcher-builder turning protocol ideas into operational controls for agentic AI systems. Current public work emphasizes runtime components that teams can adopt directly, with protocol and research threads kept as background context.
 
-My focus is on portable AI objects, execution integrity, resource governance, and machine-checkable evidence. The work sits between research and infrastructure: turning protocol ideas into specifications, repositories, and operational tooling.
+## Main Repositories
 
-## Entry Points
+* [token-governor](https://github.com/joy7758/token-governor) - budget windows and cost governance for agent runs.
+* [aro-audit](https://github.com/joy7758/aro-audit) - execution receipts and evidence for verifiable agent runs.
+* [god-spear](https://github.com/joy7758/god-spear) - trust gates for tools, files, and runtime environments.
 
-* [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview for the Digital Biosphere ecosystem.
+## Protocol and Research Background
+
+* [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview for the broader ecosystem.
 * [verifiable-dpp-agent-demo](https://github.com/joy7758/digital-biosphere-architecture/tree/main/demo/verifiable-dpp-agent-demo) - runnable end-to-end demo: DPP object -> agent result -> audit record -> MVK input -> public evidence summary.
+* [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) - POP for portable persona objects in multimodal and agentic AI systems.
+* [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) - AOP for portable and executable agent objects.
 * Narrative spine: `Digital Biosphere -> Verifiable Digital Objects -> Execution Integrity`
 
 ## Architecture Layers
@@ -28,19 +34,14 @@ Supporting governance:
 Resource Governance -> Token Governor
 ```
 
-## Core Repositories
+## Supporting Repositories
 
-* [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview and ecosystem entry point.
 * [redrock-opendpp-core](https://github.com/joy7758/redrock-opendpp-core) - DPP-style object model and integrity core.
 * [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) - minimal verification kernel.
-* [token-governor](https://github.com/joy7758/token-governor) - token, cost, and resource governance tooling for AI systems.
-* [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) - POP for portable persona objects in multimodal and agentic AI systems.
-* [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) - AOP for portable and executable agent objects.
-* [aro-audit](https://github.com/joy7758/aro-audit) - audit, provenance, and execution integrity for AI runs.
 
 ## Ecosystem Direction
 
-The direction is not a set of isolated repositories, but an infrastructure path:
+The direction is an adoption path rather than a set of isolated repositories:
 
 `protocol -> SDK -> plugin -> framework integration -> ecosystem visibility`
 
@@ -48,6 +49,7 @@ Current and planned ecosystem touchpoints include:
 
 * LangChain
 * LangGraph
+* MCP
 * future framework adapters
 
 ## Evidence and Research
@@ -58,6 +60,6 @@ Current and planned ecosystem touchpoints include:
 
 ## Current Focus
 
-* POP integration in the LangChain ecosystem
+* runtime controls and governance for AI agents
 * protocol-by-artifacts and machine-checkable evidence
-* runtime integrity and governance for AI agents
+* framework adapters and workflow integrations
