@@ -18,6 +18,10 @@ Three small and composable runtime control demos for AI agents.
 * [ARO Audit - Execution Receipt Demo](https://github.com/joy7758/aro-audit/blob/main/docs/demos/execution-receipt-demo.md)
 * [God Spear - Trust Gate Demo](https://github.com/joy7758/god-spear/blob/main/docs/demos/trust-gate-demo.md)
 
+## First External Adapter
+
+* [God Spear MCP Gate - minimal preflight trust gate for MCP-style requests](https://github.com/joy7758/god-spear-mcp-gate)
+
 ## Protocol and Research Background
 
 * [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview for the broader ecosystem.
