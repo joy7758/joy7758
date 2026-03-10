@@ -22,6 +22,10 @@ Three small and composable runtime control demos for AI agents.
 
 * [God Spear MCP Gate - minimal preflight trust gate for MCP-style requests](https://github.com/joy7758/god-spear-mcp-gate)
 
+## Second External Adapter
+
+* [Token Governor LangChain Middleware - thin budget-window middleware for LangChain agents on LangGraph](https://github.com/joy7758/token-governor-langchain-middleware)
+
 ## Protocol and Research Background
 
 * [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture overview for the broader ecosystem.
