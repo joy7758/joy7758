@@ -42,6 +42,12 @@ It is an evolving architecture stack for making AI agents more:
 - If you want the persona entry point, start with `persona-object-protocol`.
 - If you want the smallest end-to-end walkthrough, start with `verifiable-agent-demo`.
 
+## If you only open three repositories
+
+- `digital-biosphere-architecture` -- for the full system view
+- `persona-object-protocol` -- for the portable persona entry layer
+- `verifiable-agent-demo` -- for the smallest end-to-end walkthrough
+
 ## Layer-to-repository map
 
 | Scope | Repository |
