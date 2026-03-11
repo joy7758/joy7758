@@ -1,15 +1,8 @@
 # Bin Zhang
 
-Building **Digital Biosphere Architecture**, a research architecture for verifiable AI systems.
-This ecosystem separates persona, governance, execution integrity, and audit evidence into composable layers.
-The goal is to make autonomous AI systems legible, controllable, and reviewable by design.
+Building early-stage minimal reference implementations for agent runtime trace, audit evidence, and verifiable execution.
 
-My work focuses on how autonomous AI systems become:
-
-- **Identifiable** through portable persona objects
-- **Observable** through execution traces
-- **Auditable** through evidence records
-- **Governable** through runtime controls
+Current focus: turning agent runs into inspectable trace, audit records, and reusable evidence bundles.
 
 ---
 
