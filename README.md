@@ -1,19 +1,21 @@
 # Bin Zhang
 
-Independent researcher exploring **governance infrastructure for AI agents**.
+Building **Digital Biosphere Architecture**, a research architecture for verifiable AI systems.
+This ecosystem separates persona, governance, execution integrity, and audit evidence into composable layers.
+The goal is to make autonomous AI systems legible, controllable, and reviewable by design.
 
-My work focuses on how autonomous AI systems can become:
+My work focuses on how autonomous AI systems become:
 
-- **Identifiable** (persona layer)
-- **Observable** (execution trace)
-- **Auditable** (evidence records)
-- **Governable** (runtime control)
+- **Identifiable** through portable persona objects
+- **Observable** through execution traces
+- **Auditable** through evidence records
+- **Governable** through runtime controls
 
 ---
 
-# AI Agent Governance Stack
+# Digital Biosphere Architecture
 
-Minimal research architecture for auditable AI agents.
+Infrastructure for verifiable AI agents.
 
 ```mermaid
 flowchart TD
@@ -29,11 +31,19 @@ D --> E[Governance Controls<br>Token Governor]
 
 ---
 
+# Start Here
+
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo)
+- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol)
+
+---
+
 # Core Projects
 
 ### Persona Object Protocol (POP)
 
-Portable persona layer for AI agents.
+Persona object layer for stable and portable agent identity.
 
 https://github.com/joy7758/persona-object-protocol
 
@@ -41,7 +51,7 @@ https://github.com/joy7758/persona-object-protocol
 
 ### ARO Audit
 
-Evidence generation and audit records for agent execution.
+Audit evidence layer for exportable execution records.
 
 https://github.com/joy7758/aro-audit
 
@@ -49,7 +59,7 @@ https://github.com/joy7758/aro-audit
 
 ### Token Governor
 
-Runtime token cost and policy control for AI agents.
+Governance layer for runtime policy, budget, and control surfaces.
 
 https://github.com/joy7758/token-governor
 
@@ -57,7 +67,7 @@ https://github.com/joy7758/token-governor
 
 ### Verifiable Agent Demo
 
-Minimal end-to-end governance pipeline demo.
+Flagship demo for persona attachment, runtime action, trace capture, and evidence output.
 
 https://github.com/joy7758/verifiable-agent-demo
 
@@ -71,6 +81,15 @@ Current focus:
 * Agent Governance Architecture
 * Verifiable Agent Execution
 * Digital Object Infrastructure (FDO)
+
+---
+
+# Architecture Path
+
+- Persona -> portable identity object
+- Governance -> runtime control and policy boundary
+- Execution Integrity -> traceable runtime truth
+- Audit Evidence -> exportable verification bundle
 
 ---
 
