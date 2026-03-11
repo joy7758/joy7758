@@ -82,3 +82,4 @@ This work is not aimed at replacing existing agent frameworks. The focus is on g
 - [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo) - compact cross-layer walkthrough
 
 <!-- profile-render-refresh -->
+<!-- render-refresh: 20260311T205242Z -->
