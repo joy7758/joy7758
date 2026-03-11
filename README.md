@@ -2,76 +2,83 @@
 
 Independent researcher building **Digital Biosphere Architecture** for governable AI agents.
 
-I work on a layered architecture for increasingly autonomous AI systems, with a focus on **persona portability, runtime governance, execution integrity, and audit evidence**.
+I work on a five-layer architecture for increasingly autonomous AI systems, with a focus on persona portability, semantic interaction objects, runtime governance, execution integrity, and audit evidence.
 
-## What this account is about
+## My work focuses on how autonomous AI systems can become
 
-This GitHub is not a collection of unrelated experiments.  
-It is an evolving architecture stack for making AI agents more:
+- Identifiable (persona layer)
+- Interpretable for coordination (interaction layer)
+- Governable (runtime control)
+- Verifiable in execution (execution integrity)
+- Auditable (evidence records)
 
-- identifiable
-- governable
-- verifiable
-- auditable
+## AI Agent Governance Stack
 
-## Canonical architecture stack
+```mermaid
+flowchart LR
+    Persona["Persona Layer<br>POP"] --> Interaction["Interaction Layer<br>Agent Intent Protocol"]
+    Interaction --> Governance["Governance Layer<br>Token Governor"]
+    Governance --> Execution["Execution Integrity Layer<br>MVK"]
+    Execution --> Audit["Audit Evidence Layer<br>ARO-Audit"]
+```
 
-1. **Persona Layer** -- how an AI system appears as a portable persona object  
-   Project: **POP (Persona Object Protocol)**
+## Start Here
 
-2. **Governance Layer** -- what an AI system is allowed to do under runtime constraints  
-   Project: **Token Governor**
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture hub and narrative entry point
+- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) - smallest end-to-end walkthrough across layers
+- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol) - interaction-layer draft for intent, action, and result objects
 
-3. **Execution Integrity Layer** -- what actually happened during execution and whether it can be checked  
-   Project focus: execution integrity / verifiable runtime evidence
+## Core Projects
 
-4. **Audit Evidence Layer** -- what evidence can be exported, reviewed, replayed, and audited  
-   Project: **ARO-Audit**
+### POP
 
-## Start here
+Portable persona objects for the Persona Layer.
 
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) -- architecture hub and narrative entry point
-- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) -- portable persona object layer
-- [token-governor](https://github.com/joy7758/token-governor) -- runtime governance and budget-policy control layer
-- [aro-audit](https://github.com/joy7758/aro-audit) -- audit evidence and conformance-oriented verification layer
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) -- minimal end-to-end demonstration across layers
+### Agent Intent Protocol (AIP)
 
-## How to enter this ecosystem
+Machine-readable intent, action, and result objects for agent runtimes.
 
-- If you want the system overview, start with `digital-biosphere-architecture`.
-- If you want the persona entry point, start with `persona-object-protocol`.
-- If you want the smallest end-to-end walkthrough, start with `verifiable-agent-demo`.
+### Token Governor
 
-## If you only open three repositories
+Runtime governance and checkpoint control for the Governance Layer.
 
-- `digital-biosphere-architecture` -- for the full system view
-- `persona-object-protocol` -- for the portable persona entry layer
-- `verifiable-agent-demo` -- for the smallest end-to-end walkthrough
+### MVK
 
-## Layer-to-repository map
+Execution integrity and verification-oriented runtime truth for the Execution Integrity Layer.
 
-| Scope | Repository |
+### ARO-Audit
+
+Evidence records, receipts, and reviewable exports for the Audit Evidence Layer.
+
+### Verifiable Agent Demo
+
+Minimal cross-layer demonstration that links persona, interaction, governance, execution trace, and audit evidence.
+
+## Layer-to-Repository Map
+
+| Layer | Repository |
 | --- | --- |
 | Persona Layer | `persona-object-protocol` |
+| Interaction Layer | `agent-intent-protocol` |
 | Governance Layer | `token-governor` |
-| Execution Integrity Layer | execution integrity focus within the broader stack / verifiable runtime evidence direction |
+| Execution Integrity Layer | `fdo-kernel-mvk` |
 | Audit Evidence Layer | `aro-audit` |
-| End-to-end demo | `verifiable-agent-demo` |
+| Cross-layer demo | `verifiable-agent-demo` |
 
-## Current focus
+## Research Direction
 
-- architecture alignment across layered repositories
-- verifiable execution and audit evidence for agent systems
+This work is not aimed at replacing existing agent frameworks. The focus is on governance-oriented architecture layers that can be attached to AI systems as reusable, inspectable, and standardizable components.
 
-## Research direction
-
-This work is not aimed at replacing existing agent frameworks.  
-The focus is on governance-oriented architecture layers that can be attached to AI systems as reusable, inspectable, and standardizable components.
+- Agent Interaction Protocols
+- Semantic Object Communication for AI agents
+- Runtime governance for autonomous AI systems
+- Execution integrity and bounded audit evidence
 
 ## Identity / links
 
-- [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture) -- canonical architecture hub
-- [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo) -- compact cross-layer walkthrough
-- GitHub discussions and issues welcome
+- [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture) - canonical architecture hub
+- [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol) - persona-layer entry point
+- [Agent Intent Protocol](https://github.com/joy7758/agent-intent-protocol) - interaction-layer draft
+- [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo) - compact cross-layer walkthrough
 
 <!-- profile-render-refresh -->
