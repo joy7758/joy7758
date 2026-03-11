@@ -1,93 +1,56 @@
 # Bin Zhang
 
-Building early-stage minimal reference implementations for agent runtime trace, audit evidence, and verifiable execution.
+Independent researcher building **Digital Biosphere Architecture** for governable AI agents.
 
-Current focus: turning agent runs into inspectable trace, audit records, and reusable evidence bundles.
+I work on a layered architecture for increasingly autonomous AI systems, with a focus on **persona portability, runtime governance, execution integrity, and audit evidence**.
 
----
+## What this account is about
 
-# Digital Biosphere Architecture
+This GitHub is not a collection of unrelated experiments.  
+It is an evolving architecture stack for making AI agents more:
 
-Infrastructure for verifiable AI agents.
+- identifiable
+- governable
+- verifiable
+- auditable
 
-```mermaid
-flowchart TD
+## Canonical architecture stack
 
-A[Persona Layer<br>POP] --> B[Agent Runtime]
+1. **Persona Layer** -- how an AI system appears as a portable persona object  
+   Project: **POP (Persona Object Protocol)**
 
-B --> C[Execution Trace]
+2. **Governance Layer** -- what an AI system is allowed to do under runtime constraints  
+   Project: **Token Governor**
 
-C --> D[Audit Evidence<br>ARO]
+3. **Execution Integrity Layer** -- what actually happened during execution and whether it can be checked  
+   Project focus: execution integrity / verifiable runtime evidence
 
-D --> E[Governance Controls<br>Token Governor]
-```
+4. **Audit Evidence Layer** -- what evidence can be exported, reviewed, replayed, and audited  
+   Project: **ARO-Audit**
 
----
+## Start here
 
-# Start Here
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) -- architecture hub and narrative entry point
+- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) -- portable persona object layer
+- [token-governor](https://github.com/joy7758/token-governor) -- runtime governance and budget-policy control layer
+- [aro-audit](https://github.com/joy7758/aro-audit) -- audit evidence and conformance-oriented verification layer
+- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) -- minimal end-to-end demonstration across layers
 
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo)
-- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol)
+## Current focus
 
----
+- architecture alignment across layered repositories
+- verifiable execution and audit evidence for agent systems
+- protocol-oriented interfaces for portable and governable AI components
 
-# Core Projects
+## Research direction
 
-### Persona Object Protocol (POP)
+This work is not aimed at replacing existing agent frameworks.  
+The focus is on governance-oriented architecture layers that can be attached to AI systems as reusable, inspectable, and standardizable components.
 
-Persona object layer for stable and portable agent identity.
+## Identity / links
 
-https://github.com/joy7758/persona-object-protocol
-
----
-
-### ARO Audit
-
-Audit evidence layer for exportable execution records.
-
-https://github.com/joy7758/aro-audit
-
----
-
-### Token Governor
-
-Governance layer for runtime policy, budget, and control surfaces.
-
-https://github.com/joy7758/token-governor
-
----
-
-### Verifiable Agent Demo
-
-Flagship demo for persona attachment, runtime action, trace capture, and evidence output.
-
-https://github.com/joy7758/verifiable-agent-demo
-
----
-
-# Research Direction
-
-Current focus:
-
-* AI Agent Observability
-* Agent Governance Architecture
-* Verifiable Agent Execution
-* Digital Object Infrastructure (FDO)
-
----
-
-# Architecture Path
-
-- Persona -> portable identity object
-- Governance -> runtime control and policy boundary
-- Execution Integrity -> traceable runtime truth
-- Audit Evidence -> exportable verification bundle
-
----
-
-# Contact
-
-GitHub discussions and issues welcome.
+- [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture) -- canonical architecture hub
+- [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo) -- compact cross-layer walkthrough
+- GitHub discussions and issues welcome
 
 <!-- profile-render-refresh -->
