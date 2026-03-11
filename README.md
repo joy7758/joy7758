@@ -36,11 +36,26 @@ It is an evolving architecture stack for making AI agents more:
 - [aro-audit](https://github.com/joy7758/aro-audit) -- audit evidence and conformance-oriented verification layer
 - [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) -- minimal end-to-end demonstration across layers
 
+## How to enter this ecosystem
+
+- If you want the system overview, start with `digital-biosphere-architecture`.
+- If you want the persona entry point, start with `persona-object-protocol`.
+- If you want the smallest end-to-end walkthrough, start with `verifiable-agent-demo`.
+
+## Layer-to-repository map
+
+| Scope | Repository |
+| --- | --- |
+| Persona Layer | `persona-object-protocol` |
+| Governance Layer | `token-governor` |
+| Execution Integrity Layer | execution integrity focus within the broader stack / verifiable runtime evidence direction |
+| Audit Evidence Layer | `aro-audit` |
+| End-to-end demo | `verifiable-agent-demo` |
+
 ## Current focus
 
 - architecture alignment across layered repositories
 - verifiable execution and audit evidence for agent systems
-- protocol-oriented interfaces for portable and governable AI components
 
 ## Research direction
 
