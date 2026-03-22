@@ -1,85 +1,120 @@
+<!-- language-switch:start -->
+<p>
+  <a href="./README.md">
+    <img src="https://img.shields.io/badge/English-Current-1f883d?style=for-the-badge" alt="English">
+  </a>
+  <a href="./README.zh-CN.md">
+    <img src="https://img.shields.io/badge/Chinese-Switch-0f172a?style=for-the-badge" alt="Chinese">
+  </a>
+</p>
+<!-- language-switch:end -->
+
 # Bin Zhang
 
-Independent researcher building **Digital Biosphere Architecture** for governable AI agents.
+Independent researcher building a five-layer architecture for verifiable autonomous systems.
 
-I work on a five-layer architecture for increasingly autonomous AI systems, with a focus on persona portability, semantic interaction objects, runtime governance, execution integrity, and audit evidence.
+## Role
 
-## My work focuses on how autonomous AI systems can become
+I am an independent researcher working on protocol-governance-verification architecture for increasingly autonomous AI systems. The current main line is Digital Biosphere Architecture, a five-layer stack for persona, interaction, governance, execution integrity, and audit.
 
-- Identifiable (persona layer)
-- Interpretable for coordination (interaction layer)
-- Governable (runtime control)
-- Verifiable in execution (execution integrity)
-- Auditable (evidence records)
+This work is not centered on shipping a single agent product. The focus is on durable architecture layers, protocol surfaces, runtime control, replay-verifiable integrity, and audit-ready evidence.
 
-## AI Agent Governance Stack
+## Core Theory Hub
+
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) is the single canonical interpretive entry for the current five-layer stack.
+
+## Profile Bio
+
+- [Short bio page](./docs/profile-bio-finalists.md)
+
+## Core Layer Repos
+
+### persona-object-protocol
+
+Responsible for persona portability and persona object structure. Not the governance, execution, or audit repository.
+
+### agent-intent-protocol
+
+Responsible for interaction semantics across intent, action, and result objects. Not the transport, governance, or benchmark repository.
+
+### token-governor
+
+Responsible for runtime governance, policy checks, and budget-bound decision control. Not the architecture hub, benchmark suite, or audit plane.
+
+### fdo-kernel-mvk
+
+Responsible for replay-verifiable execution integrity and runtime truth surfaces. Not the policy-governance or post-execution audit repository.
+
+### aro-audit
+
+Responsible for post-execution review, verification, export, and audit control-plane outputs. Not the theory hub, benchmark suite, or runtime governance implementation.
+
+## Supporting Annexes
+
+- [agent-evidence](https://github.com/joy7758/agent-evidence) provides the semantic evidence substrate and SDK surface.
+- [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) provides adjacent interoperability and supporting protocol work.
+
+Thin adapters and implementation-specific integrations are intentionally omitted from the front page.
+
+## Demo and Evaluation
+
+- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) is the guided walkthrough surface across the stack, not the canonical theory hub or canonical runtime implementation.
+- [agent-governance-benchmark](https://github.com/joy7758/agent-governance-benchmark) is the evaluation surface for scenarios and metrics, not the canonical theory hub or canonical runtime implementation.
+
+## Legacy Lineage
+
+- [pFDO-Specification](https://github.com/joy7758/pFDO-Specification) — historical context for earlier DPP work, not the current core stack.
+- [redrock-opendpp-core](https://github.com/joy7758/redrock-opendpp-core) — prior lineage for DPP implementation work, not the current core stack.
+- [MCP-Legal-China](https://github.com/joy7758/MCP-Legal-China) — historical context for adjacent legal/tooling work, not the current core stack.
+- [Kinetic-Robotics-FDO-Sovereignty](https://github.com/joy7758/Kinetic-Robotics-FDO-Sovereignty) — historical context for sovereignty/K-RFS exploration, not the current core stack.
+- [AASP-Core](https://github.com/joy7758/AASP-Core) — prior lineage repository, not the current core stack.
+- [ISAS-Core](https://github.com/joy7758/ISAS-Core) — prior lineage repository, not the current core stack.
+- [edo-architecture-index](https://github.com/joy7758/edo-architecture-index) — historical index material, not the current core stack.
+
+## Five-Layer Map
 
 ```mermaid
 flowchart LR
     Persona["Persona Layer<br>POP"] --> Interaction["Interaction Layer<br>Agent Intent Protocol"]
     Interaction --> Governance["Governance Layer<br>Token Governor"]
     Governance --> Execution["Execution Integrity Layer<br>MVK"]
-    Execution --> Audit["Audit Evidence Layer<br>ARO-Audit"]
+    Execution --> Audit["Audit Layer<br>ARO-Audit"]
 ```
-
-## Start Here
-
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - architecture hub and narrative entry point
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) - smallest end-to-end walkthrough across layers
-- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol) - interaction-layer draft for intent, action, and result objects
-
-## Core Projects
-
-### POP
-
-Portable persona objects for the Persona Layer.
-
-### Agent Intent Protocol (AIP)
-
-Machine-readable intent, action, and result objects for agent runtimes.
-
-### Token Governor
-
-Runtime governance and checkpoint control for the Governance Layer.
-
-### MVK
-
-Execution integrity and verification-oriented runtime truth for the Execution Integrity Layer.
-
-### ARO-Audit
-
-Evidence records, receipts, and reviewable exports for the Audit Evidence Layer.
-
-### Verifiable Agent Demo
-
-Minimal cross-layer demonstration that links persona, interaction, governance, execution trace, and audit evidence.
-
-## Layer-to-Repository Map
 
 | Layer | Repository |
 | --- | --- |
-| Persona Layer | `persona-object-protocol` |
-| Interaction Layer | `agent-intent-protocol` |
-| Governance Layer | `token-governor` |
-| Execution Integrity Layer | `fdo-kernel-mvk` |
-| Audit Evidence Layer | `aro-audit` |
-| Cross-layer demo | `verifiable-agent-demo` |
+| Persona | `persona-object-protocol` |
+| Interaction | `agent-intent-protocol` |
+| Governance | `token-governor` |
+| Execution Integrity | `fdo-kernel-mvk` |
+| Audit | `aro-audit` |
+
+Supporting evidence substrate: `agent-evidence`
+
+Walkthrough demo: `verifiable-agent-demo`
 
 ## Research Direction
 
-This work is not aimed at replacing existing agent frameworks. The focus is on governance-oriented architecture layers that can be attached to AI systems as reusable, inspectable, and standardizable components.
-
-- Agent Interaction Protocols
-- Semantic Object Communication for AI agents
-- Runtime governance for autonomous AI systems
-- Execution integrity and bounded audit evidence
+- protocolized digital objects
+- runtime governance
+- replay-verifiable execution integrity
+- audit-ready evidence and review
 
 ## Identity / links
 
-- [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture) - canonical architecture hub
-- [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol) - persona-layer entry point
-- [Agent Intent Protocol](https://github.com/joy7758/agent-intent-protocol) - interaction-layer draft
-- [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo) - compact cross-layer walkthrough
+- [ORCID](https://orcid.org/0009-0002-8861-1481)
+- [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture)
+- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol)
+- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol)
+- [token-governor](https://github.com/joy7758/token-governor)
+- [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk)
+- [aro-audit](https://github.com/joy7758/aro-audit)
+
+## Status
+
+- public research surface
+- five-layer stack in active consolidation
+- legacy repos preserved for lineage, not as primary entry points
 
 <!-- profile-render-refresh -->
-<!-- render-refresh: 20260311T205242Z -->
+<!-- render-refresh: 20260323T000000Z -->
