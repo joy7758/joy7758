@@ -1,130 +1,113 @@
 <!-- language-switch:start -->
-<p>
-  <a href="./README.md">
-    <img src="https://img.shields.io/badge/%E8%8B%B1%E6%96%87-%E5%88%87%E6%8D%A2-0f172a?style=for-the-badge" alt="英文">
-  </a>
-  <a href="./README.zh-CN.md">
-    <img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-1f883d?style=for-the-badge" alt="中文">
-  </a>
-</p>
+[English](./README.md) | [中文](./README.zh-CN.md)
 <!-- language-switch:end -->
 
 # 张斌
 
-独立研究者，正在构建一套面向可验证自治系统的五层架构。
+独立研究人员为可验证的自治系统构建五层架构。
 
-## 身份定位
+## 角色
 
-我是一名独立研究者，主要研究面向持续增强自治人工智能系统的协议、治理与验证架构。当前主线是数字生物圈架构，它是一套覆盖人格、交互、治理、执行完整性和审计的五层体系。
+我是一名独立研究员，致力于日益自治的人工智能系统的协议治理验证架构。目前的主线是数字生物圈架构，一个角色、交互、治理、执行完整性和审计的五层堆栈。
 
-这项工作并不围绕单一智能体产品展开。重点在于可持续的架构层、协议边界、运行时控制、可回放验证的完整性，以及适合审计的证据体系。
+这项工作并不以运送单一代理产品为中心。重点是持久的架构层、协议表面、运行时控制、可重放验证的完整性和审计就绪的证据。
 
-## 核心理论入口
+## 核心理论中心
 
-- [`digital-biosphere-architecture`](https://github.com/joy7758/digital-biosphere-architecture) 是当前五层体系唯一的规范解释入口。
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) 是当前五层堆栈的单一规范解释条目。
 
-## 个人介绍页
+## 个人简介
 
-- [个人介绍文案页](./docs/profile-bio-finalists.zh-CN.md)
+- [简短的个人简介页](./docs/profile-bio-finalists.md)
 
 ## 核心层仓库
 
-### 人格对象协议
+### 角色对象协议
 
-仓库：[`persona-object-protocol`](https://github.com/joy7758/persona-object-protocol)
-
-负责人格可移植性与人格对象结构，不负责治理、执行或审计。
+负责角色可移植性和角色对象结构。不是治理、执行或审计仓库。
 
 ### 智能体意图协议
 
-仓库：[`agent-intent-protocol`](https://github.com/joy7758/agent-intent-protocol)
+负责跨意图、操作和结果对象的交互语义。不是传输、治理或基准仓库。
 
-负责意图、动作与结果对象之间的交互语义，不负责传输、治理或基准测试。
+### 代币调控者
 
-### 令牌治理器
+负责运行时治理、策略检查和预算约束决策控制。不是架构中心、基准测试套件或审计平面。
 
-仓库：[`token-governor`](https://github.com/joy7758/token-governor)
+### fdo 内核 mvk
 
-负责运行时治理、策略检查与预算约束决策控制，不负责架构总览、基准套件或审计平面。
+负责可重放验证的执行完整性和运行时真相表面。不是政策治理或执行后审计仓库。
 
-### 执行完整性内核
+### aro审计
 
-仓库：[`fdo-kernel-mvk`](https://github.com/joy7758/fdo-kernel-mvk)
+负责执行后审查、验证、导出和审计控制平面输出。不是理论中心、基准测试套件或运行时治理实现。
 
-负责可回放验证的执行完整性与运行时真值界面，不负责策略治理或执行后审计。
+## 支持附件
 
-### 审计层
+- [代理证据](https://github.com/joy7758/agent-evidence)提供语义证据基底和SDK界面。
+- [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) 提供相邻互操作性和支持协议工作。
 
-仓库：[`aro-audit`](https://github.com/joy7758/aro-audit)
+首页有意省略了瘦适配器和特定于实现的集成。
 
-负责执行后的审查、验证、导出与审计控制平面输出，不负责理论总览、基准套件或运行时治理实现。
+## 演示和评估
 
-## 支撑补充层
+- [可验证代理演示](https://github.com/joy7758/verifiable-agent-demo) 是整个堆栈的引导演练表面，而不是规范理论中心或规范运行时实现。
+- [代理治理基准](https://github.com/joy7758/agent-governance-benchmark) 是场景和指标的评估面，而不是规范理论中心或规范运行时实现。
 
-- [`agent-evidence`](https://github.com/joy7758/agent-evidence) 提供语义化证据底座与开发接口。
-- [`agent-object-protocol`](https://github.com/joy7758/agent-object-protocol) 提供相邻互操作协议与补充协议工作。
+## 传承血统
 
-较薄的适配器与特定实现集成不会放在首页入口中。
+- [pFDO-规范](https://github.com/joy7758/pFDO-Specification) — 早期 DPP 工作的历史背景，而不是当前的核心堆栈。
+- [redrock-opendpp-core](https://github.com/joy7758/redrock-opendpp-core) — DPP 实现工作的先前沿袭，而不是当前的核心堆栈。
+- [MCP-Legal-China](https://github.com/joy7758/MCP-Legal-China) — 相邻法律/工具工作的历史背景，而不是当前的核心堆栈。
+- [Kinetic-Robotics-FDO-Sovereignty](https://github.com/joy7758/Kinetic-Robotics-FDO-Sovereignty) — 主权/K-RFS 探索的历史背景，而不是当前的核心堆栈。
+- [AASP-Core](https://github.com/joy7758/AASP-Core) — 先前的沿袭仓库，而不是当前的核心堆栈。
+- [ISAS-Core](https://github.com/joy7758/ISAS-Core) — 先前的沿袭仓库，而不是当前的核心堆栈。
+- [edo-architecture-index](https://github.com/joy7758/edo-architecture-index) — 历史索引材料，而不是当前的核心堆栈。
 
-## 演示与评测
-
-- [`verifiable-agent-demo`](https://github.com/joy7758/verifiable-agent-demo) 是贯穿整套体系的引导演示入口，不是规范理论入口，也不是规范运行时实现。
-- [`agent-governance-benchmark`](https://github.com/joy7758/agent-governance-benchmark) 是场景与指标的评测入口，不是规范理论入口，也不是规范运行时实现。
-
-## 历史谱系
-
-- [`pFDO-Specification`](https://github.com/joy7758/pFDO-Specification) 是更早期 DPP 工作的历史背景，不属于当前核心体系。
-- [`redrock-opendpp-core`](https://github.com/joy7758/redrock-opendpp-core) 是更早期 DPP 实现路线的前序工作，不属于当前核心体系。
-- [`MCP-Legal-China`](https://github.com/joy7758/MCP-Legal-China) 是相关法律与工具方向的历史背景，不属于当前核心体系。
-- [`Kinetic-Robotics-FDO-Sovereignty`](https://github.com/joy7758/Kinetic-Robotics-FDO-Sovereignty) 是主权与 K-RFS 探索方向的历史背景，不属于当前核心体系。
-- [`AASP-Core`](https://github.com/joy7758/AASP-Core) 是更早期谱系仓库，不属于当前核心体系。
-- [`ISAS-Core`](https://github.com/joy7758/ISAS-Core) 是更早期谱系仓库，不属于当前核心体系。
-- [`edo-architecture-index`](https://github.com/joy7758/edo-architecture-index) 是历史索引材料，不属于当前核心体系。
-
-## 五层映射
+## 五层地图
 
 ```mermaid
 flowchart LR
-    Persona["人格层"] --> Interaction["交互层"]
-    Interaction --> Governance["治理层"]
-    Governance --> Execution["执行完整性层"]
-    Execution --> Audit["审计层"]
+    Persona["Persona Layer<br>POP"] --> Interaction["Interaction Layer<br>Agent Intent Protocol"]
+    Interaction --> Governance["Governance Layer<br>Token Governor"]
+    Governance --> Execution["Execution Integrity Layer<br>MVK"]
+    Execution --> Audit["Audit Layer<br>ARO-Audit"]
 ```
 
-| 层级 | 仓库 |
+|层 |仓库 |
 | --- | --- |
-| 人格层 | `persona-object-protocol` |
-| 交互层 | `agent-intent-protocol` |
-| 治理层 | `token-governor` |
-| 执行完整性层 | `fdo-kernel-mvk` |
-| 审计层 | `aro-audit` |
+|角色| `persona-object-protocol` |
+|互动| `agent-intent-protocol` |
+|治理| `token-governor` |
+|执行诚信 | `fdo-kernel-mvk` |
+|审计| `aro-audit` |
 
-支撑证据底座：`agent-evidence`
+支持证据基材：`agent-evidence`
 
-演示入口：`verifiable-agent-demo`
+演练演示：`verifiable-agent-demo`
 
 ## 研究方向
 
 - 协议化数字对象
 - 运行时治理
-- 可回放验证的执行完整性
-- 面向审查与审计的证据体系
+- 可重放验证的执行完整性
+- 审计准备证据和审查
 
-## 身份与链接
+## 身份/链接
 
 - [ORCID](https://orcid.org/0009-0002-8861-1481)
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
-- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol)
-- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol)
-- [token-governor](https://github.com/joy7758/token-governor)
-- [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk)
-- [aro-audit](https://github.com/joy7758/aro-audit)
+- [数字生物圈架构](https://github.com/joy7758/digital-biosphere-architecture)
+- [角色对象协议](https://github.com/joy7758/persona-object-protocol)
+- [智能体意图协议](https://github.com/joy7758/agent-intent-protocol)
+- [代币监管者](https://github.com/joy7758/token-governor)
+- [fdo-内核-mvk](https://github.com/joy7758/fdo-kernel-mvk)
+- [aro-审计](https://github.com/joy7758/aro-audit)
 
-## 当前状态
+## 地位
 
-- 公开研究界面
-- 五层体系仍在持续整合中
-- 历史仓库作为谱系保留，不再作为主入口
+- 公共研究面
+- 主动整合中的五层堆栈
+- 为沿袭保留的遗留仓库，而不是作为主要入口点
 
 <!-- profile-render-refresh -->
 <!-- render-refresh: 20260323T000000Z -->

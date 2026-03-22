@@ -1,12 +1,5 @@
 <!-- language-switch:start -->
-<p>
-  <a href="./profile-bio-finalists.md">
-    <img src="https://img.shields.io/badge/English-Current-1f883d?style=for-the-badge" alt="English">
-  </a>
-  <a href="./profile-bio-finalists.zh-CN.md">
-    <img src="https://img.shields.io/badge/Chinese-Switch-0f172a?style=for-the-badge" alt="Chinese">
-  </a>
-</p>
+[English](./profile-bio-finalists.md) | [中文](./profile-bio-finalists.zh-CN.md)
 <!-- language-switch:end -->
 
 # Profile Bio Finalists
