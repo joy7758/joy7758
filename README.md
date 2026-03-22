@@ -1,3 +1,14 @@
+<!-- language-switch:start -->
+<p>
+  <a href="./README.md">
+    <img src="https://img.shields.io/badge/English-Current-1f883d?style=for-the-badge" alt="English">
+  </a>
+  <a href="./README.zh-CN.md">
+    <img src="https://img.shields.io/badge/Chinese-Switch-0f172a?style=for-the-badge" alt="Chinese">
+  </a>
+</p>
+<!-- language-switch:end -->
+
 # Bin Zhang
 
 Independent researcher building a five-layer architecture for verifiable autonomous systems.
@@ -11,6 +22,10 @@ This work is not centered on shipping a single agent product. The focus is on du
 ## Core Theory Hub
 
 - [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) is the single canonical interpretive entry for the current five-layer stack.
+
+## Profile Bio
+
+- [Short bio page](./docs/profile-bio-finalists.md)
 
 ## Core Layer Repos
 
@@ -102,4 +117,4 @@ Walkthrough demo: `verifiable-agent-demo`
 - legacy repos preserved for lineage, not as primary entry points
 
 <!-- profile-render-refresh -->
-<!-- render-refresh: 20260311T205242Z -->
+<!-- render-refresh: 20260323T000000Z -->
