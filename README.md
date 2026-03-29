@@ -12,6 +12,18 @@ I am an independent researcher working on protocol-governance-verification archi
 
 This work is not centered on shipping a single agent product. The focus is on durable architecture layers, protocol surfaces, runtime control, replay-verifiable integrity, and audit-ready evidence.
 
+## For LangChain readers
+
+If you already use LangChain or LangGraph, traces and logs help you inspect what happened during a run. Execution evidence is the next step: it packages what happened so a third party can verify the exported artifacts later, including offline.
+
+For the concrete path, read these in order:
+
+1. [agent-evidence](https://github.com/joy7758/agent-evidence) for the concrete evidence bundle and offline verification entry point
+2. [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) for the walkthrough and proof path
+3. [aro-audit](https://github.com/joy7758/aro-audit) for the audit control plane and receipt validation surface
+
+For the architecture itself, [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) remains the canonical entry.
+
 ## Core Theory Hub
 
 - [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) is the single canonical interpretive entry for the current five-layer stack.
@@ -44,14 +56,14 @@ Responsible for post-execution review, verification, export, and audit control-p
 
 ## Supporting Annexes
 
-- [agent-evidence](https://github.com/joy7758/agent-evidence) provides the semantic evidence substrate and SDK surface.
+- [agent-evidence](https://github.com/joy7758/agent-evidence) provides the concrete execution evidence entry point, semantic evidence substrate, and SDK surface.
 - [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) provides adjacent interoperability and supporting protocol work.
 
 Thin adapters and implementation-specific integrations are intentionally omitted from the front page.
 
 ## Demo and Evaluation
 
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) is the guided walkthrough surface across the stack, not the canonical theory hub or canonical runtime implementation.
+- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) is the guided walkthrough and proof path across the stack, not the canonical theory hub or canonical runtime implementation.
 - [agent-governance-benchmark](https://github.com/joy7758/agent-governance-benchmark) is the evaluation surface for scenarios and metrics, not the canonical theory hub or canonical runtime implementation.
 
 ## Legacy Lineage

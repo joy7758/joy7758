@@ -12,6 +12,18 @@
 
 这项工作并不以运送单一代理产品为中心。重点是持久的架构层、协议表面、运行时控制、可重放验证的完整性和审计就绪的证据。
 
+## 给 LangChain 读者
+
+如果你已经在用 LangChain 或 LangGraph，traces 和 logs 主要帮助你检查一次运行里发生了什么。执行证据再往前走一步：它把运行结果打包成第三方之后可以验证的导出工件，而且可以离线验证。
+
+如果你想看最具体的入口，按这个顺序读：
+
+1. [agent-evidence](https://github.com/joy7758/agent-evidence)，看具体的证据包与离线验证入口
+2. [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo)，看演练和 proof path
+3. [aro-audit](https://github.com/joy7758/aro-audit)，看审计控制面和回执验证表面
+
+如果你要先看整体架构，[digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) 仍然是规范入口。
+
 ## 核心理论中心
 
 - [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) 是当前五层堆栈的单一规范解释条目。
@@ -44,14 +56,14 @@
 
 ## 支持附件
 
-- [代理证据](https://github.com/joy7758/agent-evidence)提供语义证据基底和SDK界面。
+- [代理证据](https://github.com/joy7758/agent-evidence)提供具体的执行证据入口、语义证据基底和 SDK 界面。
 - [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) 提供相邻互操作性和支持协议工作。
 
 首页有意省略了瘦适配器和特定于实现的集成。
 
 ## 演示和评估
 
-- [可验证代理演示](https://github.com/joy7758/verifiable-agent-demo) 是整个堆栈的引导演练表面，而不是规范理论中心或规范运行时实现。
+- [可验证代理演示](https://github.com/joy7758/verifiable-agent-demo) 是整个堆栈的引导演练和 proof path，而不是规范理论中心或规范运行时实现。
 - [代理治理基准](https://github.com/joy7758/agent-governance-benchmark) 是场景和指标的评估面，而不是规范理论中心或规范运行时实现。
 
 ## 传承血统
