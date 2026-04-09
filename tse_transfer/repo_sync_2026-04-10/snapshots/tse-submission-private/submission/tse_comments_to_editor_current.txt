@@ -1,0 +1,7 @@
+We disclose a related JSS witness manuscript from the same broader research
+agenda. That JSS line is no longer under review and is no longer active as a
+submission line. The present TSE submission is the flagship problem-defining
+paper centered on operation accountability as a first-class verification
+boundary, with a failure taxonomy, same-case comparison, and an
+evidence-bounded validation framing. The artifact components in the TSE
+submission serve only as bounded supporting evidence for that argument.

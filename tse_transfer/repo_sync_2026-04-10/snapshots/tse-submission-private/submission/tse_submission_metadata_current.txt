@@ -1,0 +1,14 @@
+Title: Operation Accountability as a First-Class Verification Boundary for Machine-Actionable Object Systems
+Author: Bin Zhang
+Affiliation: Independent Researcher
+Location: Yuncheng, Shanxi, China
+Email: joy7759@gmail.com
+Corresponding Author: Bin Zhang
+Canonical Main Manuscript File: manuscript/tse_flagship/tse_flagship_main.md
+Canonical Appendix File: manuscript/tse_flagship/tse_flagship_appendix.md
+
+Abstract:
+Runtime traces can help explain what an AI system did, but they do not themselves provide a compact, independently checkable account of a single operation. This paper presents Execution Evidence and Operation Accountability Profile v0.1, a minimal artifact for one operation accountability statement in machine-actionable object systems, informed by digital-object concepts. The artifact serves as a minimal verification boundary for a bounded question rather than as a broad governance platform. It consists of a profile specification, a JSON Schema, a profile-aware validator exposed through agent-evidence validate-profile <file>, one valid example, three invalid examples that each break one main rule class, and one runnable metadata-enrichment demo that produces a validation report. The validator checks the bounded properties defined by the artifact: schema conformance, reference closure, consistency across policy/provenance/evidence links, and integrity digest recomputation. A fresh rerun reproduces the documented pass/fail behavior for the valid example, the three single-failure invalid examples, and the demo path. The contribution is intentionally narrow. It does not claim registry design, multi-agent orchestration coverage, formal deployment evidence, or broad platform outcomes. Instead, it offers an argument for treating operation accountability as a first-class verification boundary, with the minimal profile, validator, and demo serving as supporting evidence.
+
+Related Submission Disclosure:
+A related JSS witness manuscript from the same broader research agenda is no longer under review and is no longer active as a submission line. That manuscript was centered on a minimal witness-style implementation line, including a minimal profile, validator, and controlled runnable examples. In contrast, the present TSE submission is the flagship problem-defining paper centered on operation accountability as a first-class verification boundary, with a failure taxonomy, same-case comparison, and an evidence-bounded validation framing. The artifact components in the TSE submission serve only as bounded supporting evidence for that argument.

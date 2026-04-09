@@ -1,0 +1,32 @@
+Title: Sovereign-pFDO: A Protocol-Driven Framework for Distributed Data Governance and Knowledge Sovereignty
+Status: First-pass metadata extraction from the original submission-package docx
+Source Document: docs/original_material/2026-04-06_sovereign_pfdo_submission_package_ready.docx
+Canonical Main Manuscript Target: manuscript/main/sovereign_pfdo_main.md
+Canonical Appendix Target: manuscript/main/sovereign_pfdo_appendix.md
+
+Author: Bin Zhang
+Primary Subject Area: Computer science / Computer networks
+Secondary Subject Area: Engineering / Software engineering
+
+Keywords:
+- FAIR Digital Objects
+- DOIP 2.0
+- Data Sovereignty
+- BLAKE3
+- AI Governance
+- KL Divergence
+
+Abstract:
+Distributed data spaces expose a persistent governance gap between high-level institutional rules and low-level protocol execution. This paper studies protocol-layer governance in distributed digital-object environments. It presents Sovereign-pFDO as a governance-oriented architecture that binds policy-carrying protocol semantics, identifier construction, and gateway-side enforcement hooks into a unified exchange workflow. The current contribution is bounded: it specifies a BLAKE3-based PID construction template, introduces a divergence-based gateway decision model, and discusses how these mechanisms can be integrated with offload-friendly deployment settings. The paper does not claim formal security proof, universal AI-governance validity, or experimentally validated terabit-scale deployment. Instead, it offers an architecture-level framework for studying data-sovereignty-oriented control in high-throughput digital-object systems. The manuscript should therefore be read as a protocol and governance architecture paper for distributed systems with computer-networks relevance.
+
+Data Availability Statement:
+The datasets and core implementation logic supporting the findings of this
+study are available from the corresponding author upon reasonable request.
+
+Funding:
+The author(s) received no specific funding for this work.
+
+Working Notes:
+- This file preserves the current submission-metadata wording extracted from the original docx and should be revised only against the Sovereign-pFDO manuscript line.
+- Do not import TSE/JSS terminology such as `witness`, `validator`, `execution evidence profile`, or `first-class verification boundary` into this submission line.
+- Reference cleanup is still pending; the raw intake lives in `references/reference_intake_raw.md` and must not be copied directly into the formal bibliography.
