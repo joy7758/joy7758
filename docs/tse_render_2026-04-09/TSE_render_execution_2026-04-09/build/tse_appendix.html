@@ -1,0 +1,196 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Appendix: Bounded Artifact Review Notes</title>
+  <link rel="stylesheet" href="/Users/zhangbin/Desktop/TSE_render_execution_2026-04-09/assets/ieee_like_appendix.css" />
+</head>
+<body>
+  <header class="frontmatter">
+    <h1 class="title">Appendix: Bounded Artifact Review Notes</h1>
+    <div class="author">Bin Zhang</div>
+  </header>
+  <main class="article-body">
+<p>All file paths in this appendix are relative to the root of the
+public artifact repository.</p>
+<p>This appendix summarizes the concrete artifact surfaces that bound
+the paper’s claims. It is reviewer-facing and intentionally limited to
+the bounded artifact surface used to support the TSE
+verification-boundary argument. The appendix does not add new evidence,
+new experiments, or new scenarios beyond the material already described
+in the main paper and the public artifact.</p>
+<h1 id="a.-public-artifact-baseline">A. Public Artifact Baseline</h1>
+<p>The public artifact baseline for the present paper is the repository
+<code>joy7758/agent-evidence</code> at commit
+<code>80e7e78ab6cbd9befc24b56fbf9cdffabd99b5de</code>. The currently
+recorded artifact DOI is <code>10.5281/zenodo.19055948</code>. The
+paper’s bounded claims are tied to
+<code>Execution Evidence and Operation Accountability Profile v0.1</code>
+and its documented validator/demo path.</p>
+<h1 id="b.-artifact-entry-points-used-by-the-paper">B. Artifact Entry
+Points Used By The Paper</h1>
+<p>The main manuscript relies on a small set of artifact entry
+points:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Artifact file(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profile definition</td>
+<td><code>spec/execution-evidence-operation-accountability-profile-v0.1.md</code></td>
+</tr>
+<tr>
+<td>Schema boundary</td>
+<td><code>schema/execution-evidence-operation-accountability-profile-v0.1.schema.json</code></td>
+</tr>
+<tr>
+<td>Example set overview</td>
+<td><code>examples/README.md</code></td>
+</tr>
+<tr>
+<td>Runnable demo overview</td>
+<td><code>demo/README.md</code></td>
+</tr>
+<tr>
+<td>Demo scenario</td>
+<td><code>demo/scenario.md</code></td>
+</tr>
+<tr>
+<td>Demo expected behavior</td>
+<td><code>demo/expected-output.md</code></td>
+</tr>
+<tr>
+<td>Validator regression coverage</td>
+<td><code>tests/test_operation_accountability_profile.py</code></td>
+</tr>
+</tbody>
+</table>
+<p>These files define the bounded evidence surface for the paper’s
+factual claims about object shape, validator behavior, controlled
+failure cases, and the single demo walkthrough.</p>
+<h1 id="c.-fresh-clean-rerun">C. Fresh Clean Rerun</h1>
+<p>A fresh local rerun was recorded on <code>2026-04-07</code> using
+Python <code>3.14.3</code> on macOS arm64. The minimal tested install
+path was the base editable install from the artifact repository
+root:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv .repro-v0_1-20260407-full</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/python</span> <span class="at">-m</span> pip install <span class="at">--upgrade</span> pip</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/python</span> <span class="at">-m</span> pip install <span class="at">-e</span> .</span></code></pre></div>
+<p>The rerun command list was:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/agent-evidence</span> validate-profile examples/minimal-valid-evidence.json</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/agent-evidence</span> validate-profile examples/invalid-missing-required.json</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/agent-evidence</span> validate-profile examples/invalid-unclosed-reference.json</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/agent-evidence</span> validate-profile examples/invalid-policy-link-broken.json</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">.repro-v0_1-20260407-full/bin/python</span> demo/run_operation_accountability_demo.py</span></code></pre></div>
+<p>The observed outcomes matched the bounded expectations already
+described by the artifact:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Command target</th>
+<th>Observed exit</th>
+<th>Bounded outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>examples/minimal-valid-evidence.json</code></td>
+<td><code>0</code></td>
+<td>passing validation report with <code>ok: true</code> and
+<code>issue_count: 0</code></td>
+</tr>
+<tr>
+<td><code>examples/invalid-missing-required.json</code></td>
+<td><code>1</code></td>
+<td>primary error code <code>schema_violation</code></td>
+</tr>
+<tr>
+<td><code>examples/invalid-unclosed-reference.json</code></td>
+<td><code>1</code></td>
+<td>primary error code <code>unresolved_output_ref</code></td>
+</tr>
+<tr>
+<td><code>examples/invalid-policy-link-broken.json</code></td>
+<td><code>1</code></td>
+<td>primary error code <code>unresolved_evidence_policy_ref</code></td>
+</tr>
+<tr>
+<td><code>demo/run_operation_accountability_demo.py</code></td>
+<td><code>0</code></td>
+<td>final PASS summary line and emitted demo artifacts</td>
+</tr>
+</tbody>
+</table>
+<p>This rerun supports a narrow claim only: the current minimal path can
+be re-executed cleanly and reproduces the documented pass/fail behavior
+for the controlled examples and the single demo walkthrough.</p>
+<h1 id="d.-controlled-example-set">D. Controlled Example Set</h1>
+<p>The example set is intentionally small and role-specific:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Example file</th>
+<th>Intended role</th>
+<th>Main failure or success surface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>examples/minimal-valid-evidence.json</code></td>
+<td>valid profile specimen</td>
+<td>full bounded pass</td>
+</tr>
+<tr>
+<td><code>examples/invalid-missing-required.json</code></td>
+<td>invalid specimen</td>
+<td>schema failure</td>
+</tr>
+<tr>
+<td><code>examples/invalid-unclosed-reference.json</code></td>
+<td>invalid specimen</td>
+<td>reference-closure failure</td>
+</tr>
+<tr>
+<td><code>examples/invalid-policy-link-broken.json</code></td>
+<td>invalid specimen</td>
+<td>evidence-to-policy linkage failure</td>
+</tr>
+</tbody>
+</table>
+<p>The purpose of this structure is not exhaustive rule coverage. It is
+to give a reviewer one passing specimen, three single-failure specimens,
+and one compact view of the current validator boundary.</p>
+<h1 id="e.-demo-boundary-and-non-goals">E. Demo Boundary And
+Non-Goals</h1>
+<p>The demo is a single metadata-enrichment walkthrough over one source
+object under an explicit policy boundary. It is included to show that
+the current profile and validator path can close an end-to-end loop and
+emit reviewable artifacts. It is not presented as a benchmark,
+deployment study, or large-scale evaluation.</p>
+<p>The same boundary applies to the paper as a whole. The contribution
+does not extend to registry design, multi-agent accountability
+composition, full FDO mapping, formal deployment assurance, or a
+complete cryptographic trust fabric.</p>
+  </main>
+</body>
+</html>

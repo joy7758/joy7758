@@ -1,0 +1,17 @@
+README_RENDER_HANDOFF.md	1458
+manuscript/tse_flagship/tse_flagship_appendix.md	4841
+manuscript/tse_flagship/tse_flagship_main.md	24949
+submission/58_references_tse.bib	3588
+submission/60_page_truth_after_citations.md	2423
+submission/61_citation_bibliography_consistency_check.md	2341
+submission/62_crossref_numbering_cleanup.md	2129
+submission/64_final_page_truth_handoff.md	1957
+submission/65_final_submission_baseline_freeze.md	1942
+submission/tse_comments_to_editor_current.txt	511
+submission/tse_cover_letter_current.md	1876
+submission/tse_difference_note_current.md	3333
+submission/tse_submission_metadata_current.txt	2583
+submission/tse_submission_package_readme_current.md	877
+submission/tse_upload_manifest_current.md	2650
+FILE_LIST.txt	731
+SHA256SUMS.txt	1743

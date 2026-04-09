@@ -1,0 +1,33 @@
+$if(lang)$
+<html lang="$lang$">
+$else$
+<html>
+$endif$
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+</head>
+<body>
+  <header class="frontmatter">
+$if(title)$
+    <h1 class="title">$title$</h1>
+$endif$
+$for(author)$
+    <div class="author">$author$</div>
+$endfor$
+$if(abstract)$
+    <section class="abstract-block">
+      <h2>Abstract</h2>
+      <div class="abstract-text">$abstract$</div>
+    </section>
+$endif$
+  </header>
+  <main class="article-body">
+$body$
+  </main>
+</body>
+</html>

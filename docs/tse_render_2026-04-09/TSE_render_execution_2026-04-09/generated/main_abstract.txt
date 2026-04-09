@@ -1,0 +1,21 @@
+Runtime traces can help explain what an AI system did, but they do not by
+themselves provide a compact, independently checkable account of a single
+operation. This paper presents `Execution Evidence and Operation Accountability
+Profile v0.1`, a minimal artifact for one operation accountability statement in
+machine-actionable object systems, informed by digital-object concepts. The
+artifact serves as a minimal verification boundary for a bounded
+question rather than as a broad governance platform. It consists
+of a profile specification, a JSON Schema, a profile-aware validator exposed
+through `agent-evidence validate-profile <file>`, one valid example, three
+invalid examples that each break one main rule class, and one runnable
+metadata-enrichment demo that produces a validation report. The validator
+checks the bounded properties defined by the artifact: schema
+conformance, reference closure, consistency across policy/provenance/evidence
+links, and integrity digest recomputation. A fresh rerun reproduces the
+documented pass/fail behavior for the valid example, the three single-failure
+invalid examples, and the demo path. The contribution is intentionally narrow.
+It does not claim registry design, multi-agent orchestration coverage, formal
+deployment evidence, or broad platform outcomes. Instead, it offers an
+argument for treating operation accountability as a first-class verification
+boundary, with the minimal profile, validator, and demo serving as supporting
+evidence.

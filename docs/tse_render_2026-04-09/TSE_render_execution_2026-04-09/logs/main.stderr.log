@@ -1,0 +1,116 @@
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: open of input hyperref.sty failed
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: open of input hyperref.sty failed
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: open of input IEEEtran.cls failed
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: open of input IEEEtran.cls failed
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: failure requesting "SHA256SUM" from network
+caused by: error sending request for url (https://data1.fullyjustified.net/tlextras-2022.0r0.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+warning: open of input IEEEtran.cls failed
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar): error trying to connect: unsuccessful tunnel
+caused by: error trying to connect: unsuccessful tunnel
+caused by: unsuccessful tunnel
+error: texput.tex:6: ! LaTeX Error: File `IEEEtran.cls' not found.
+error: halted on potentially-recoverable error as specified
+Error producing PDF.
+note: reading from standard input; outputs will appear under the base name "texput"
+note: Running TeX ...
+note: downloading SHA256SUM
+note: connecting to https://relay.fullyjustified.net/default_bundle_v33.tar
+note: downloading SHA256SUM
+note: connecting to https://relay.fullyjustified.net/default_bundle_v33.tar
+note: downloading SHA256SUM
+note: connecting to https://relay.fullyjustified.net/default_bundle_v33.tar
+note: downloading SHA256SUM
+note: connecting to https://relay.fullyjustified.net/default_bundle_v33.tar
+note: downloading SHA256SUM
+note: connecting to https://relay.fullyjustified.net/default_bundle_v33.tar
+
