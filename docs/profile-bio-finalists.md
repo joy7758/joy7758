@@ -6,7 +6,7 @@
 
 ## Recommended bio
 
-Independent researcher building Digital Biosphere Architecture for governable and verifiable AI agents.
+Independent researcher building the Digital Biosphere Architecture and Agent Evidence Profile for governable, replay-verifiable, and audit-ready AI agents.
 
 ## Two alternative bios
 
@@ -15,4 +15,4 @@ Independent researcher building Digital Biosphere Architecture for governable an
 
 ## Selection note
 
-The recommended bio is the best current fit because it is short, neutral, and broad enough to cover the architecture line without turning into a list of repository names.
+The recommended bio matches the profile currently shown on the public GitHub page. It keeps the dual-entry story visible without turning into a list of repository names.
