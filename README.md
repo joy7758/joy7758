@@ -4,67 +4,48 @@
 
 # Bin Zhang
 
-Independent researcher building a five-layer architecture for verifiable autonomous systems.
+Independent researcher building the Digital Biosphere Architecture and Agent Evidence Profile for governable, replay-verifiable, and audit-ready AI agents.
 
 ## Role
 
-I am an independent researcher working on protocol-governance-verification architecture for increasingly autonomous AI systems. The current main line is Digital Biosphere Architecture, a five-layer stack for persona, interaction, governance, execution integrity, and audit.
+I work on a five-layer architecture for persona, interaction, governance,
+execution integrity, and audit in increasingly autonomous AI systems.
 
-This work is not centered on shipping a single agent product. The focus is on durable architecture layers, protocol surfaces, runtime control, replay-verifiable integrity, and audit-ready evidence.
+This page is a profile index for the current research line. The main public
+surface is not a single agent product, but a coordinated architecture and
+evidence path.
 
-## For LangChain readers
+## Dual entry
 
-If you already use LangChain or LangGraph, traces and logs help you inspect what happened during a run. Execution evidence is the next step: it packages what happened so a third party can verify the exported artifacts later, including offline.
+- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) = canonical architecture hub
+- [agent-evidence](https://github.com/joy7758/agent-evidence) = concrete execution-evidence entry
 
-For the concrete path, read these in order:
+## For architecture readers
 
-1. [agent-evidence](https://github.com/joy7758/agent-evidence) for the concrete evidence bundle and offline verification entry point
-2. [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) for the walkthrough and proof path
-3. [aro-audit](https://github.com/joy7758/aro-audit) for the audit control plane and receipt validation surface
+- Start with [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) for the system view, repository roles, and five-layer map.
+- Then use the layer repositories when you want persona, interaction, governance, execution-integrity, or audit-layer details.
 
-For the architecture itself, [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) remains the canonical entry.
+## For evidence readers
 
-## Core Theory Hub
+- [agent-evidence](https://github.com/joy7758/agent-evidence) for the concrete execution-evidence package and offline verification path
+- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) for the shortest walkthrough
+- [aro-audit](https://github.com/joy7758/aro-audit) for the audit control plane and post-execution review
 
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) is the single canonical interpretive entry for the current five-layer stack.
+## Core layer repos
 
-## Profile Bio
-
-- [Short bio page](./docs/profile-bio-finalists.md)
-
-## Core Layer Repos
-
-### persona-object-protocol
-
-Responsible for persona portability and persona object structure. Not the governance, execution, or audit repository.
-
-### agent-intent-protocol
-
-Responsible for interaction semantics across intent, action, and result objects. Not the transport, governance, or benchmark repository.
-
-### token-governor
-
-Responsible for runtime governance, policy checks, and budget-bound decision control. Not the architecture hub, benchmark suite, or audit plane.
-
-### fdo-kernel-mvk
-
-Responsible for replay-verifiable execution integrity and runtime truth surfaces. Not the policy-governance or post-execution audit repository.
-
-### aro-audit
-
-Responsible for post-execution review, verification, export, and audit control-plane outputs. Not the theory hub, benchmark suite, or runtime governance implementation.
+- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) = persona layer
+- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol) = interaction layer
+- [token-governor](https://github.com/joy7758/token-governor) = governance layer
+- [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) = execution-integrity layer
+- [aro-audit](https://github.com/joy7758/aro-audit) = audit layer
 
 ## Supporting Annexes
 
-- [agent-evidence](https://github.com/joy7758/agent-evidence) provides the concrete execution evidence entry point, semantic evidence substrate, and SDK surface.
 - [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) provides adjacent interoperability and supporting protocol work.
+- [agent-governance-benchmark](https://github.com/joy7758/agent-governance-benchmark) provides evaluation scenarios and metrics.
+- [docs/profile-bio-finalists.md](./docs/profile-bio-finalists.md) keeps the short bio page.
 
-Thin adapters and implementation-specific integrations are intentionally omitted from the front page.
-
-## Demo and Evaluation
-
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) is the guided walkthrough and proof path across the stack, not the canonical theory hub or canonical runtime implementation.
-- [agent-governance-benchmark](https://github.com/joy7758/agent-governance-benchmark) is the evaluation surface for scenarios and metrics, not the canonical theory hub or canonical runtime implementation.
+Thin adapters and implementation-specific integrations stay off the front page.
 
 ## Legacy Lineage
 
