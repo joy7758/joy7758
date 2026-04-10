@@ -11,9 +11,8 @@ Independent researcher building the Digital Biosphere Architecture and Agent Evi
 I work on a five-layer architecture for persona, interaction, governance,
 execution integrity, and audit in increasingly autonomous AI systems.
 
-This page is a profile index for the current research line. The main public
-surface is not a single agent product, but a coordinated architecture and
-evidence path.
+This page is the public index for a dual-entry mainline across architecture and
+evidence. It is not a single agent product surface.
 
 ## Dual entry
 
@@ -103,4 +102,4 @@ Walkthrough demo: `verifiable-agent-demo`
 - legacy repos preserved for lineage, not as primary entry points
 
 <!-- profile-render-refresh -->
-<!-- render-refresh: 20260323T000000Z -->
+<!-- render-refresh: 20260410T000000Z -->

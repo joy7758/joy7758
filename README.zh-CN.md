@@ -10,7 +10,7 @@ Independent researcher building the Digital Biosphere Architecture and Agent Evi
 
 我的当前研究主线，是围绕 persona、interaction、governance、execution integrity 和 audit 五层来组织日益自治的 AI 系统。
 
-这个首页是研究索引页，不是单一 agent 产品主页。公开表面围绕一条统一主线展开：architecture hub + execution-evidence entry。
+这个首页是 architecture 与 evidence 双入口主线的公开索引，不是单一 agent 产品主页。
 
 ## Dual entry
 
@@ -100,4 +100,4 @@ flowchart LR
 - 为沿袭保留的遗留仓库，而不是作为主要入口点
 
 <!-- profile-render-refresh -->
-<!-- render-refresh: 20260323T000000Z -->
+<!-- render-refresh: 20260410T000000Z -->
