@@ -4,49 +4,23 @@
 
 # Bin Zhang
 
-Independent researcher building the Digital Biosphere Architecture and Agent Evidence Profile for governable, replay-verifiable, and audit-ready AI agents.
+Independent research on governable, verifiable AI agents for FDO / dataspace environments.
 
-## Role
+## Main navigation
 
-I work on a five-layer architecture for persona, interaction, governance,
-execution integrity, and audit in increasingly autonomous AI systems.
-
-This page is the public index for a dual-entry mainline across architecture and
-evidence. It is not a single agent product surface.
-
-## Dual entry
-
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) = canonical architecture hub
-- [agent-evidence](https://github.com/joy7758/agent-evidence) = concrete execution-evidence entry
-
-## For architecture readers
-
-- Start with [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) for the system view, repository roles, and five-layer map.
-- Then use the layer repositories when you want persona, interaction, governance, execution-integrity, or audit-layer details.
-
-## For evidence readers
-
-- [agent-evidence](https://github.com/joy7758/agent-evidence) for the concrete execution-evidence package and offline verification path
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) for the shortest walkthrough
-- [aro-audit](https://github.com/joy7758/aro-audit) for the audit control plane and post-execution review
+- Architecture hub -> [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+- Evidence entry -> [agent-evidence](https://github.com/joy7758/agent-evidence)
+- Walkthrough demo -> [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo)
+- Audit plane -> [aro-audit](https://github.com/joy7758/aro-audit)
 
 ## Core layer repos
 
-- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) = persona layer
-- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol) = interaction layer
-- [token-governor](https://github.com/joy7758/token-governor) = governance layer
-- [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) = execution-integrity layer
-- [aro-audit](https://github.com/joy7758/aro-audit) = audit layer
+- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol)
+- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol)
+- [token-governor](https://github.com/joy7758/token-governor)
+- [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk)
 
-## Supporting Annexes
-
-- [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) provides adjacent interoperability and supporting protocol work.
-- [agent-governance-benchmark](https://github.com/joy7758/agent-governance-benchmark) provides evaluation scenarios and metrics.
-- [docs/profile-bio-finalists.md](./docs/profile-bio-finalists.md) keeps the short bio page.
-
-Thin adapters and implementation-specific integrations stay off the front page.
-
-## Legacy Lineage
+## Historical / lineage
 
 - [pFDO-Specification](https://github.com/joy7758/pFDO-Specification) — historical context for earlier DPP work, not the current core stack.
 - [redrock-opendpp-core](https://github.com/joy7758/redrock-opendpp-core) — prior lineage for DPP implementation work, not the current core stack.
@@ -55,28 +29,6 @@ Thin adapters and implementation-specific integrations stay off the front page.
 - [AASP-Core](https://github.com/joy7758/AASP-Core) — prior lineage repository, not the current core stack.
 - [ISAS-Core](https://github.com/joy7758/ISAS-Core) — prior lineage repository, not the current core stack.
 - [edo-architecture-index](https://github.com/joy7758/edo-architecture-index) — historical index material, not the current core stack.
-
-## Five-Layer Map
-
-```mermaid
-flowchart LR
-    Persona["Persona Layer<br>POP"] --> Interaction["Interaction Layer<br>Agent Intent Protocol"]
-    Interaction --> Governance["Governance Layer<br>Token Governor"]
-    Governance --> Execution["Execution Integrity Layer<br>MVK"]
-    Execution --> Audit["Audit Layer<br>ARO-Audit"]
-```
-
-| Layer | Repository |
-| --- | --- |
-| Persona | `persona-object-protocol` |
-| Interaction | `agent-intent-protocol` |
-| Governance | `token-governor` |
-| Execution Integrity | `fdo-kernel-mvk` |
-| Audit | `aro-audit` |
-
-Supporting evidence substrate: `agent-evidence`
-
-Walkthrough demo: `verifiable-agent-demo`
 
 ## Research Direction
 
