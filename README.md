@@ -43,7 +43,7 @@ Independent research on governable, verifiable AI agents for FDO / dataspace env
 - `agent-evidence` validator / schema / registration pack
 - FDO Testbed 最小注册演示
 - ResearchFlow-Agent v0.1：面向论文与研究流程的多角色 Agent 工作流
-- 我向 Microsoft Agent Governance Toolkit 贡献并合入了一份互操作说明，说明 AGT 的运行时证据怎样映射到外部问责配置文件（operation-accountability profile）。这是一条文档层面的互操作入口，不是运行时集成，也不代表微软采用了 EEOAP。
+- 向 Microsoft Agent Governance Toolkit 贡献并合入了一份互操作说明，说明 AGT 的运行时证据怎样映射到外部问责配置文件（operation-accountability profile）。
 
 ## 技术关键词
 
