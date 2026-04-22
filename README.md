@@ -67,6 +67,6 @@ For hiring and collaboration, start with `agent-evidence` and `verifiable-agent-
 
 ## Contact
 
-Email: 35353456@qq.com<br>
+Email: joy7759@gmail.com<br>
 GitHub: [github.com/joy7758](https://github.com/joy7758)<br>
 ORCID: [0009-0002-8861-1481](https://orcid.org/0009-0002-8861-1481)
