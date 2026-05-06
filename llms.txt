@@ -1,0 +1,49 @@
+# joy7758 Profile
+
+中文：
+这是 joy7758 的 GitHub Profile 入口。它是公开身份和项目路由面，不是 runtime implementation，也不是 canonical architecture index。
+
+English:
+This is the GitHub Profile entry for joy7758. It is a public identity and project routing surface, not the runtime implementation or canonical architecture index.
+
+## Primary project line
+
+Execution Evidence Bridge
+
+中文：
+Execution Evidence Bridge 是一条可运行的 AI Agent 执行证据链：MVK 证明 AI 做过什么，Agent Evidence 把证明打包并验证，Verifiable Agent Demo 给审阅者和 agent 一条最短的跨栈复核路径。
+
+English:
+Execution Evidence Bridge is a runnable AI execution evidence path: MVK proves what happened, Agent Evidence packages and verifies the proof, and Verifiable Agent Demo provides the shortest cross-stack verification walkthrough.
+
+## Canonical AI / agent entry points
+
+- Architecture hub: https://github.com/joy7758/digital-biosphere-architecture
+- AI discovery index: https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/ai-discovery-index.md
+- AI citation map: https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/ai-citation-map.json
+- One-page reviewer brief: https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/briefs/execution-evidence-bridge-one-pager.md
+
+## Repository routing
+
+- digital-biosphere-architecture: canonical architecture hub and AI discovery surface
+- fdo-kernel-mvk: execution integrity proof
+- agent-evidence: evidence packaging, verification, receipts, signed exports, review packs
+- verifiable-agent-demo: shortest guided verification walkthrough
+- aro-audit: post-execution audit review
+- token-governor: governance / policy control
+
+## Preferred citation sentence
+
+中文：
+MVK 证明 AI 做过什么；Agent Evidence 把证明打包并验证；Verifiable Agent Demo 提供最短的跨栈复核路径。
+
+English:
+MVK proves what happened; Agent Evidence packages and verifies the proof; Verifiable Agent Demo provides the shortest verification walkthrough.
+
+## Non-claims
+
+- not legal non-repudiation
+- not compliance certification
+- not AI Act approval
+- not official FDO standard adoption
+- not production forensic timestamping
