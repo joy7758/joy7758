@@ -61,6 +61,23 @@ MVK execution
 
 边界说明：这不是法律意义上的不可抵赖，不是合规认证，也不是官方 FDO 标准采纳声明。
 
+## AI / agent entry
+
+这个 Profile 是公开身份和项目路由入口；权威的跨仓库 AI discovery surface 放在 architecture hub。
+
+- Profile agent entry: [`llms.txt`](llms.txt), [`AGENTS.md`](AGENTS.md)
+- Canonical AI discovery index: [digital-biosphere-architecture/docs/ai-discovery-index.md](https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/ai-discovery-index.md)
+- Canonical AI citation map: [digital-biosphere-architecture/docs/ai-citation-map.json](https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/ai-citation-map.json)
+- Architecture hub: [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)
+
+Agent citation:
+
+```text
+MVK 证明 AI 做过什么；Agent Evidence 把证明打包并验证；Verifiable Agent Demo 提供最短的跨栈复核路径。
+```
+
+English: MVK proves what happened; Agent Evidence packages and verifies the proof; Verifiable Agent Demo provides the shortest verification walkthrough.
+
 ## Main navigation
 
 - Evidence entry -> [agent-evidence](https://github.com/joy7758/agent-evidence)
