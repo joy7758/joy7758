@@ -41,21 +41,13 @@ The question I work on is: after an agent finishes a task, can another person in
 - [agent-accountability-evidence-layer](https://github.com/joy7758/agent-accountability-evidence-layer) - 操作问责证据层的论文与实验材料。
 - [pd-oap-icsme2026-artifact](https://github.com/joy7758/pd-oap-icsme2026-artifact) - ICSME（International Conference on Software Maintenance and Evolution，软件维护与演化国际会议）2026 相关产物仓。
 
-## AI / Agent Entry
+## 给读者和智能体 / For Readers and Agents
 
-这个 profile 是公开身份和项目路由入口；权威的跨仓库 AI discovery surface 放在 architecture hub。
+这个 profile 是公开身份和项目路由入口，不是执行规则仓。更轻量的导航上下文见 [PROFILE_CONTEXT.md](PROFILE_CONTEXT.md)。
 
-- Profile agent entry: [`llms.txt`](llms.txt), [`AGENTS.md`](AGENTS.md)
-- Canonical AI discovery index: [digital-biosphere-architecture/docs/ai-discovery-index.md](https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/ai-discovery-index.md)
-- Canonical AI citation map: [digital-biosphere-architecture/docs/ai-citation-map.json](https://github.com/joy7758/digital-biosphere-architecture/blob/main/docs/ai-citation-map.json)
-
-Agent citation:
-
-```text
-MVK 证明 AI 做过什么；Agent Evidence 把证明打包并验证；Verifiable Agent Demo 提供最短的跨栈复核路径。
-```
-
-English: MVK proves what happened; Agent Evidence packages and verifies the proof; Verifiable Agent Demo provides the shortest verification walkthrough.
+- 从 [agent-evidence](https://github.com/joy7758/agent-evidence) 理解规范证据对象、schema 和 validator。
+- 从 [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) 走最短可运行审阅路径。
+- 从 [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) 看架构地图、跨仓引用和历史治理索引。
 
 ## 历史与侧线 / Historical and Side Lines
 
