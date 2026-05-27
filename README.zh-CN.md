@@ -12,6 +12,10 @@ Independent researcher building the Digital Biosphere Architecture and Agent Evi
 
 这个首页是 architecture 与 evidence 双入口主线的公开索引，不是单一 agent 产品主页。
 
+## 最新论文
+
+- **A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows** 已在线发表于 *Journal of Imaging Informatics in Medicine*。DOI：[10.1007/s10278-026-02019-6](https://doi.org/10.1007/s10278-026-02019-6)。Springer Nature SharedIt view-only 链接：[https://rdcu.be/fk6Qd](https://rdcu.be/fk6Qd)。
+
 ## Dual entry
 
 - [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) = canonical architecture hub
