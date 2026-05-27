@@ -11,6 +11,10 @@ My focus is not only making agents useful, but making their execution traceable,
 
 - **A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows** has been published online in *Journal of Imaging Informatics in Medicine*. DOI: [10.1007/s10278-026-02019-6](https://doi.org/10.1007/s10278-026-02019-6). Springer Nature SharedIt view-only link: [https://rdcu.be/fk6Qd](https://rdcu.be/fk6Qd).
 
+## 当前投稿状态 / Current Manuscript Tracking
+
+- `SCICO-D-26-00367`: **A Software-Engineering Method for Claim-to-Evidence Traceability in Operation-Level Accountability Artifacts**, submitted to *Science of Computer Programming* as a Research Paper. Current public status wording: submission received.
+
 ## 主线入口 / Mainline
 
 这条主线关注智能体执行后的证据闭环：执行记录、校验、回放、receipt、review pack，以及跨仓库可复核的最小路径。
