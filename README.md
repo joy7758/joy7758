@@ -1,67 +1,77 @@
 # 张斌 / Bin Zhang
 
-我研究智能体执行证据与操作问责配置文件。  
-I work on Agent Evidence / Operation Accountability Profile.
+我研究 AI 智能体执行证据、操作问责、执行完整性、审计回执，以及面向高约束场景的可复核证据层。
 
-重点不是让 AI（Artificial Intelligence，人工智能）多回答一句，而是让智能体执行之后留下可验证、可复核、可审计的证据。
+重点不是让 AI（Artificial Intelligence，人工智能）多回答一句，而是让智能体或 AI 系统完成任务后，留下可追踪、可复核、可审计的证据。
 
-My focus is not only making agents useful, but making their execution traceable, reviewable, and verifiable after work has been done.
+## 当前主线
 
-## 最新论文 / Recent Publication
+- **Agent Evidence / Operation Accountability Profile**：智能体执行证据与操作问责配置文件。
+- **Execution Integrity**：执行过程的 trace、checkpoint、checksum、replay 与篡改检测。
+- **Audit / Receipt Layer**：面向审阅者、编辑、监管或项目验收的证据回执。
+- **AI Execution Audit Layer**：面向政务、医疗、数字纪检等高约束场景的执行过程可信审计层。
 
-- **A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows** has been published online in *Journal of Imaging Informatics in Medicine*. DOI: [10.1007/s10278-026-02019-6](https://doi.org/10.1007/s10278-026-02019-6). Springer Nature SharedIt view-only link: [https://rdcu.be/fk6Qd](https://rdcu.be/fk6Qd).
+这个 profile 是公开身份和项目路由入口，不是执行规则仓，也不是生产系统地图。
 
-## 当前投稿状态 / Current Manuscript Tracking
+## 最新论文与论文台账摘要
 
-- `SCICO-D-26-00367`: **A Software-Engineering Method for Claim-to-Evidence Traceability in Operation-Level Accountability Artifacts**, submitted to *Science of Computer Programming* as a Research Paper. Current public status wording: submission received.
+论文台账最后同步日期：**2026-06-11**。
 
-## 主线入口 / Mainline
+### 已发表
 
-这条主线关注智能体执行后的证据闭环：执行记录、校验、回放、receipt、review pack，以及跨仓库可复核的最小路径。
+- **A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows**，已在线发表于 *Journal of Imaging Informatics in Medicine*。DOI: [10.1007/s10278-026-02019-6](https://doi.org/10.1007/s10278-026-02019-6)。Springer Nature SharedIt view-only link: [https://rdcu.be/fk6Qd](https://rdcu.be/fk6Qd)。
 
-This line is about evidence left by agent execution: records, validation, replay, receipts, review packs, and a short cross-repository verification path.
+### 当前活跃或可公开跟踪状态
 
-1. [agent-evidence](https://github.com/joy7758/agent-evidence) - Agent Evidence / Operation Accountability Profile 的核心证据对象、schema、validator 和示例。
-2. [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) - MVK（Minimal Verification Kernel，最小验证内核），用于确定性执行、checkpoint、checksum 和篡改检测。
-3. [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) - 面向审阅者的最小可运行演示，展示 intent、trace、evidence bundle、replay verdict 和 audit receipt。
-4. [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - 架构 hub，说明主线仓之间的证据流转、AI discovery surface 和引用路径。
-5. [token-governor](https://github.com/joy7758/token-governor) - 智能体运行前的预算、策略、fallback 和风险治理。
-6. [aro-audit](https://github.com/joy7758/aro-audit) - 智能体执行后的 receipt 生成、验证、review 和 conformance 检查。
+- **Digital Biosphere / The Journal of Supercomputing**：已过技术检查，当前 `With editor`，活跃投稿。
+- **Data & Policy / DAP-2026-0249**：`Computable Evidence Objects for Automated-Driving Traffic Events: A Human-Review Validator under Synthetic Evaluation` 已成功在线提交，当前按 submitted for consideration 记录。
+- **Empirical Software Engineering / EMSE-D-26-00609**：`A Minimal Execution-Evidence Profile for Bounded Reviewability of Agentic Software Runs` 已投递成功，当前活跃投稿。
+- **Computer Standards & Interfaces / CSI-D-26-00686**：execution-evidence / EEOAP 线稿件已确认投稿，当前按 submission received / being processed 记录。
+- **Journal of Imaging Informatics in Medicine / JDIM-D-26-01809**：public DICOM metadata audit 线稿件已确认投稿，当前活跃投稿。
+- **AI Act / TSE-2026-04-0381**：high-risk AI compliance-evidence 线当前记录为 `Under Review`；European Commission EUSurvey AI high-risk contribution 已成功提交。
 
-## 快速理解 / Short Summary
+以上状态只按已确认台账口径展示。`submitted`、`with editor`、`under review` 不等于接收、录用、发表或 DOI。
 
-```text
-agent execution
--> structured evidence
--> validation / replay
--> audit receipt
--> review pack
--> accountable operation profile
-```
+## 最新应用方向：数字纪检与执行可信审计
 
-我关心的是：当一个智能体完成任务后，其他人能不能检查它到底做了什么、证据有没有被改过、结果能不能离线复核。
+最新应用线聚焦 **AI 执行过程可信审计 SDK / Execution Audit Layer**。
 
-The question I work on is: after an agent finishes a task, can another person inspect what happened, detect tampering, and review the evidence offline?
+面向场景包括：政务流程、医疗系统、数字纪检、项目验收、监管审计与后续存证系统。核心问题是：AI 在运行时具体做了什么，输入输出是否被篡改，结果是否可复现，责任链是否可验收。
 
-## 场景试点与论文产物 / Pilots and Paper Artifacts
+当前抽象能力包括：
 
-- [redcrag-aep](https://github.com/joy7758/redcrag-aep) - RedCrag 场景下的 Agent Evidence Profile（智能体证据配置文件）试点。
-- [agent-accountability-evidence-layer](https://github.com/joy7758/agent-accountability-evidence-layer) - 操作问责证据层的论文与实验材料。
-- [pd-oap-icsme2026-artifact](https://github.com/joy7758/pd-oap-icsme2026-artifact) - ICSME（International Conference on Software Maintenance and Evolution，软件维护与演化国际会议）2026 相关产物仓。
+- `trace.jsonl`：记录执行步骤、输入、输出和时间。
+- `hash_chain.json`：为输入、输出和步骤链生成 SHA256 hash chain。
+- `policy_decision.json`：输出 `allow / warn / review / block` 与人工复核标记。
+- `replay_report.json`：回放确定性审计管线，发现不一致时返回 `REPLAY_FAILED`。
 
-## 给读者和智能体 / For Readers and Agents
+该方向目前作为执行可信审计层和应用场景说明展示，不在本 profile 中声明为生产部署、合规认证或正式政务系统。
 
-这个 profile 是公开身份和项目路由入口，不是执行规则仓。更轻量的导航上下文见 [PROFILE_CONTEXT.md](PROFILE_CONTEXT.md)。
+## 公开仓库导航
 
-- 从 [agent-evidence](https://github.com/joy7758/agent-evidence) 理解规范证据对象、schema 和 validator。
-- 从 [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) 走最短可运行审阅路径。
-- 从 [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) 看架构地图、跨仓引用和历史治理索引。
+请把以下入口理解为轻量导航，不要把它们拼成公开可复刻的生产执行链。
 
-## 历史与侧线 / Historical and Side Lines
+1. [agent-evidence](https://github.com/joy7758/agent-evidence) - 智能体执行证据与操作问责的 profile、schema、validator 和 bounded reference surface。
+2. [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) - 单路径 toy validation demo，不是 enterprise sandbox 或 production pipeline。
+3. [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) - public meaning layer，提供概念、词汇和架构边界。
+4. [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) - execution-integrity interface 与 replay/checkpoint 概念层。
+5. [token-governor](https://github.com/joy7758/token-governor) - governance interface、policy shape 和最小公开示例。
+6. [aro-audit](https://github.com/joy7758/aro-audit) - receipt / audit reference layer，不是公开审计控制面。
+
+## 给读者和智能体
+
+更轻量的导航上下文见 [PROFILE_CONTEXT.md](PROFILE_CONTEXT.md)。
+
+阅读顺序建议：
+
+1. 先看本 profile 的研究主线和论文台账摘要。
+2. 再看 `agent-evidence` 的 evidence/profile 公开接口。
+3. 需要理解架构边界时，再看 `digital-biosphere-architecture`。
+4. 不要从 profile 反推出生产执行系统、私有策略引擎、运行时状态或完整闭环实现。
+
+## 历史与侧线
 
 部分早期实验、fork（派生镜像）和侧线仓库正在通过“回收站”索引整理。该索引不是删除声明，只记录迁移、归档候选、观察和人工复核状态。
-
-Some early experiments, forks, and side-line repositories are being organized behind a recycle-bin index. The index is not a deletion statement; it records migration, archive-candidate, observation, and human-review status.
 
 - [digital-biosphere-architecture/回收站](https://github.com/joy7758/digital-biosphere-architecture/tree/main/%E5%9B%9E%E6%94%B6%E7%AB%99)
 
