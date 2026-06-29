@@ -21,21 +21,31 @@ The focus is not making AI（Artificial Intelligence，人工智能）answer one
 
 Canonical ledger status is maintained separately. The public profile only shows a short, confirmed summary.
 
-台账最后同步日期：2026-06-11。
+GitHub-readable ledger:
+
+- Manuscript status ledger: <https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md>
+- Research direction index: <https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md#%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E7%B4%A2%E5%BC%95>
+
+台账最后同步日期：2026-06-29。
 
 Confirmed public highlights:
 
 - UDI-DICOM / JDIM-JIIM：一篇 minimal UDI-DICOM mapping profile and validation artifact 已在线发表；DOI `10.1007/s10278-026-02019-6`。
 - Digital Biosphere / The Journal of Supercomputing：已过技术检查，当前 `With editor`，活跃投稿。
 - Data & Policy / `DAP-2026-0249`：automated-driving traffic evidence 线已成功在线提交，当前按 submitted for consideration 记录。
+- JSS / ECL execution IR：用户确认已提交成功，当前为 `active_submission_pending_formal_confirmation`；`JSSOFTWARE-S-26-01977` 只作为 proof/build staging reference。
+- SP&E / `4563331`：agent-evidence practical experience 线已成功提交并送达 editorial office，当前按 `submitted_to_editorial_office / active_submission` 记录。
 - EMSE / `EMSE-D-26-00609`：execution-evidence journal v3 线已投递成功，当前活跃投稿。
 - CSI / `CSI-D-26-00686`：execution-evidence / EEOAP 线已确认投稿。
 - JDIM-JIIM / `JDIM-D-26-01809`：public DICOM metadata audit 线已确认投稿。
 - AI Act / `TSE-2026-04-0381`：high-risk AI compliance-evidence 线当前记录为 `Under Review`；EUSurvey AI high-risk contribution 已成功提交。
 
+Recently rejected, closed, or reframed lines remain in the manuscript ledger's `论文来路树` and `研究方向索引`. Do not list those lines as active from the profile summary.
+
 Status boundary:
 
 - `submitted` does not mean accepted.
+- `submitted_to_editorial_office` does not mean under review, accepted, or published.
 - `with editor` does not mean peer-reviewed.
 - `under review` does not mean positive review.
 - DOI / publication claims should only be made where explicitly confirmed.

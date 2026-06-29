@@ -16,6 +16,14 @@ Independent researcher building the Digital Biosphere Architecture and Agent Evi
 
 - **A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows** 已在线发表于 *Journal of Imaging Informatics in Medicine*。DOI：[10.1007/s10278-026-02019-6](https://doi.org/10.1007/s10278-026-02019-6)。Springer Nature SharedIt view-only 链接：[https://rdcu.be/fk6Qd](https://rdcu.be/fk6Qd)。
 
+## 论文台账和研究方向
+
+- GitHub 可读台账：[Manuscript status ledger](https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md)
+- 研究方向索引：[Research direction index](https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md#%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E7%B4%A2%E5%BC%95)
+- 台账最后同步日期：**2026-06-29**
+
+当前公开摘要按台账保守口径展示：Digital Biosphere / Supercomputing、Data & Policy `DAP-2026-0249`、JSS / ECL execution IR、SP&E `4563331`、EMSE `EMSE-D-26-00609`、CSI `CSI-D-26-00686`、JDIM-JIIM `JDIM-D-26-01809` 与 AI Act / `TSE-2026-04-0381` 分别保留为对应的活跃、submitted、with-editor 或 under-review 状态。`submitted`、`submitted_to_editorial_office`、`with editor`、`under review` 不等于接收、录用、发表或 DOI。
+
 ## Dual entry
 
 - [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) = canonical architecture hub
@@ -104,4 +112,4 @@ flowchart LR
 - 为沿袭保留的遗留仓库，而不是作为主要入口点
 
 <!-- profile-render-refresh -->
-<!-- render-refresh: 20260410T000000Z -->
+<!-- render-refresh: 20260629T000000Z -->
