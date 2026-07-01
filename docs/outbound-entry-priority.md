@@ -6,9 +6,12 @@
 | Someone asks what POP is | `persona-object-protocol` | `digital-biosphere-architecture` | POP is best explained in its own repository, with the architecture hub as broader context. |
 | Someone asks what the architecture looks like in practice | `verifiable-agent-demo` | `digital-biosphere-architecture` | The demo gives the shortest practical path, while the hub gives the full interpretive frame. |
 | Someone asks about evidence, auditability, or conformance | `aro-audit` | `verifiable-agent-demo` | ARO-Audit is the strongest evidence-oriented repository, with the demo as a concrete cross-layer example. |
+| Someone asks how to verify one agent tool call or tool receipt | `verifiable-tool-invocation-flow` | `aro-audit` | VTIF is the smallest public tool-call receipt route; ARO is the broader post-execution audit route. |
+| Someone asks how to reuse a persona object in CrewAI / LangChain / AutoGen-style configs | `persona-object-protocol` | `verifiable-agent-demo` | POP is the portable persona route; the demo shows the artifact path after an agent run. |
 | Someone asks about runtime governance or token-budget control | `token-governor` | `digital-biosphere-architecture` | Token Governor is the focused governance repository, with the hub as broader stack context. |
 | Someone asks about structured agent-object protocol work | `agent-object-protocol` | `digital-biosphere-architecture` | AOP is the relevant adjacent protocol line, with the hub clarifying its place in the ecosystem. |
 
 ## Current default
 
 If there is no strong context, default to sharing `digital-biosphere-architecture` first.
+If the context is external reuse, citation, or community feedback, start with `docs/external-citation-front-door-2026-06-28.md`.

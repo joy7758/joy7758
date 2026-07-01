@@ -25,12 +25,26 @@ Execution Evidence Bridge is a runnable AI execution evidence path: MVK proves w
 
 ## Repository routing
 
+- external-citation-front-door: docs/external-citation-front-door-2026-06-28.md
+- external-citation-route-manifest: docs/external-citation-route-manifest.json
+- AI citation card: docs/start-here/ai-citation-card.md
+- verifiable-tool-invocation-flow: smallest public route for one guarded tool call, one signed receipt, one independent verifier
 - digital-biosphere-architecture: canonical architecture hub and AI discovery surface
 - fdo-kernel-mvk: execution integrity proof
 - agent-evidence: evidence packaging, verification, receipts, signed exports, review packs
 - verifiable-agent-demo: shortest guided verification walkthrough
 - aro-audit: post-execution audit review
+- persona-object-protocol: portable persona object and framework-readable persona config route
 - token-governor: governance / policy control
+
+## External reuse route
+
+- tool-call receipt problem: share verifiable-tool-invocation-flow first
+- post-execution receipt review problem: share aro-audit first
+- portable persona config problem: share persona-object-protocol first
+- before-after audit artifact problem: share verifiable-agent-demo first
+
+Do not describe these routes as official LangChain, CrewAI, AutoGen, FDO, compliance, legal non-repudiation, or externally validated integrations.
 
 ## Preferred citation sentence
 

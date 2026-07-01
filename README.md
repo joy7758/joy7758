@@ -23,7 +23,7 @@ English: I build tools that help people verify what AI systems actually did.
 
 English: MVK proves what happened; Agent Evidence packages and verifies the proof; Verifiable Agent Demo gives reviewers the shortest walkthrough across the stack.
 
-我做了一条可以实际跑通的 AI Agent 执行证据链。  
+我做了一条可以实际跑通的 AI Agent 执行证据链。
 它解决的问题很简单：AI 系统执行完之后，别人能不能检查它到底做了什么、有没有被改过、证据能不能被带走复核。
 
 这条链分成几层：
@@ -77,6 +77,21 @@ MVK 证明 AI 做过什么；Agent Evidence 把证明打包并验证；Verifiabl
 ```
 
 English: MVK proves what happened; Agent Evidence packages and verifies the proof; Verifiable Agent Demo provides the shortest verification walkthrough.
+
+## External reuse / citation entry
+
+如果你是从 LangChain、CrewAI、AutoGen、MCP 或 agent audit 问题过来，先按具体问题选入口，不要先读完整架构：
+
+| Problem you have | First link to share or cite | Why this route is small |
+| --- | --- | --- |
+| Prove that one agent tool call happened and was not silently changed | [`verifiable-tool-invocation-flow`](https://github.com/joy7758/verifiable-tool-invocation-flow) | One guarded tool call, one signed receipt, one independent verifier. |
+| Review one post-execution receipt or conformance artifact | [`aro-audit`](https://github.com/joy7758/aro-audit) | Narrow audit/review surface for receipt verification, not the whole architecture. |
+| Move a persona object into a framework-readable agent config | [`persona-object-protocol`](https://github.com/joy7758/persona-object-protocol) | Portable persona object first, runtime integration second. |
+| Show the before/after artifact from a runnable agent demo | [`verifiable-agent-demo`](https://github.com/joy7758/verifiable-agent-demo) | Shortest walkthrough from an agent run to audit JSON. |
+
+Agent-readable route files: [`docs/external-citation-front-door-2026-06-28.md`](docs/external-citation-front-door-2026-06-28.md), [`docs/external-citation-route-manifest.json`](docs/external-citation-route-manifest.json).
+
+Boundary: these are public routing and reuse surfaces, not official framework integrations, legal non-repudiation, compliance certification, or proof of external validation.
 
 ## Main navigation
 

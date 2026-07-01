@@ -1,0 +1,82 @@
+{
+  "manifest_id": "joy7758_external_citation_route_manifest_2026_06_30",
+  "status": "local_profile_route_manifest_candidate_only",
+  "current_truth_surface": "local joy7758 profile worktree only",
+  "current_profile_changes_public": false,
+  "public_write_done": false,
+  "external_citation_evidence_recorded": false,
+  "goal_completion_candidate": false,
+  "purpose": "route AI retrieval and citation agents from one narrow external problem to the smallest reusable repository entry",
+  "profile_front_door": "docs/external-citation-front-door-2026-06-28.md",
+  "profile_ai_citation_card": "docs/start-here/ai-citation-card.md",
+  "route_count": 4,
+  "routes": [
+    {
+      "route_id": "tool_call_receipt",
+      "external_problem": "Verify one agent tool call outside the original runtime",
+      "first_repo": "verifiable-tool-invocation-flow",
+      "public_url_after_gate": "https://github.com/joy7758/verifiable-tool-invocation-flow",
+      "start_here_after_gate": "https://github.com/joy7758/verifiable-tool-invocation-flow/blob/main/docs/start-here/verify-agent-tool-call-receipt.md",
+      "ai_citation_card_after_gate": "https://github.com/joy7758/verifiable-tool-invocation-flow/blob/main/docs/start-here/ai-citation-card.md",
+      "citation_or_reuse_unit": "guarded tool call -> signed receipt -> independent verifier",
+      "query_triggers": [
+        "agent transaction log",
+        "tool-call receipt",
+        "signed tool invocation",
+        "verify agent tool call"
+      ]
+    },
+    {
+      "route_id": "receipt_review",
+      "external_problem": "Review one post-execution receipt or conformance artifact",
+      "first_repo": "aro-audit",
+      "public_url_after_gate": "https://github.com/joy7758/aro-audit",
+      "start_here_after_gate": "https://github.com/joy7758/aro-audit/blob/main/docs/start-here/verify-one-receipt.md",
+      "ai_citation_card_after_gate": "https://github.com/joy7758/aro-audit/blob/main/docs/start-here/ai-citation-card.md",
+      "citation_or_reuse_unit": "receipt fixture -> verifier -> audit/review status",
+      "query_triggers": [
+        "audit one receipt",
+        "receipt verification",
+        "post-execution audit",
+        "agent audit artifact"
+      ]
+    },
+    {
+      "route_id": "portable_persona_config",
+      "external_problem": "Reuse a persona object as framework-readable agent config",
+      "first_repo": "persona-object-protocol",
+      "public_url_after_gate": "https://github.com/joy7758/persona-object-protocol",
+      "start_here_after_gate": "https://github.com/joy7758/persona-object-protocol/blob/main/docs/start-here/portable-persona-for-crewai.md",
+      "ai_citation_card_after_gate": "https://github.com/joy7758/persona-object-protocol/blob/main/docs/start-here/ai-citation-card.md",
+      "citation_or_reuse_unit": "persona object -> config export -> framework trial",
+      "query_triggers": [
+        "portable agent persona",
+        "CrewAI persona YAML",
+        "framework-readable persona",
+        "agent role config reuse"
+      ]
+    },
+    {
+      "route_id": "agent_run_audit_json",
+      "external_problem": "Show a before/after artifact from a runnable agent workflow",
+      "first_repo": "verifiable-agent-demo",
+      "public_url_after_gate": "https://github.com/joy7758/verifiable-agent-demo",
+      "start_here_after_gate": "https://github.com/joy7758/verifiable-agent-demo/blob/main/docs/start-here/from-agent-run-to-audit-json.md",
+      "ai_citation_card_after_gate": "https://github.com/joy7758/verifiable-agent-demo/blob/main/docs/start-here/ai-citation-card.md",
+      "citation_or_reuse_unit": "agent run -> evidence bundle -> audit JSON",
+      "query_triggers": [
+        "agent run audit JSON",
+        "before after agent evidence",
+        "reviewable agent artifact",
+        "minimal verifiable agent demo"
+      ]
+    }
+  ],
+  "boundary": {
+    "not_official_framework_integration": true,
+    "not_legal_non_repudiation": true,
+    "not_compliance_certification": true,
+    "not_external_validation": true,
+    "not_ai_citation_evidence_until_third_party_url_recorded": true
+  }
+}
