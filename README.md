@@ -20,7 +20,7 @@ GitHub 可读台账入口：
 - [Manuscript status ledger](https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md)
 - [Research direction index](https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md#%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E7%B4%A2%E5%BC%95)
 
-论文台账最后同步日期：**2026-06-29**。
+论文台账最后同步日期：**2026-07-06**。
 
 ### 已发表
 
@@ -28,16 +28,17 @@ GitHub 可读台账入口：
 
 ### 当前活跃或可公开跟踪状态
 
+- **Autonomous Agents and Multi-Agent Systems / Springer Nature / 5ede189f-ddfd-4333-9646-42d8f820f284**：`A Synthetic Benchmark for Parasitic Transition Patterns in Multi-Agent Systems` 已提交；当前按 `submission_received / quality_checks_completed / initial_technical_check` 记录。
+- **SAEE / ALIFE 2026 LBA / lb120**：`SAEE as a Frozen Reflexive Evolutionary Dynamical Object` 当前为 `Under Evaluation`。
 - **Digital Biosphere / The Journal of Supercomputing**：已过技术检查，当前 `With editor`，活跃投稿。
 - **Data & Policy / DAP-2026-0249**：`Computable Evidence Objects for Automated-Driving Traffic Events: A Human-Review Validator under Synthetic Evaluation` 已成功在线提交，当前按 submitted for consideration 记录。
-- **Journal of Systems & Software / ECL execution IR**：`ECL: A Deterministic Cross-Runtime Execution IR with Replayable Semantics and Dependency Interface` 已由用户确认提交成功，当前为 `active_submission_pending_formal_confirmation`；`JSSOFTWARE-S-26-01977` 只作为 proof/build staging reference。
+- **Journal of Systems & Software / JSSOFTWARE-D-26-01526**：`Structural Reviewability of Agentic Software Development Runs: A Real-Run Observational Study` 已收到投稿，当前按 `submission_received / active_submission` 记录。
 - **Software: Practice and Experience / 4563331**：`Practical experience building agent-evidence: a Python tool for validating AI agent operation evidence` 已成功提交并送达 editorial office，当前按 `submitted_to_editorial_office / active_submission` 记录。
-- **Empirical Software Engineering / EMSE-D-26-00609**：`A Minimal Execution-Evidence Profile for Bounded Reviewability of Agentic Software Runs` 已投递成功，当前活跃投稿。
 - **Computer Standards & Interfaces / CSI-D-26-00686**：execution-evidence / EEOAP 线稿件已确认投稿，当前按 submission received / being processed 记录。
-- **Journal of Imaging Informatics in Medicine / JDIM-D-26-01809**：public DICOM metadata audit 线稿件已确认投稿，当前活跃投稿。
+- **Journal of Imaging Informatics in Medicine / JDIM-D-26-01809**：public DICOM metadata audit 线为 `Major Revisions requested`，修回准备中。
 - **AI Act / TSE-2026-04-0381**：high-risk AI compliance-evidence 线当前记录为 `Under Review`；European Commission EUSurvey AI high-risk contribution 已成功提交。
 
-近期拒稿 / 关闭 / 改投来路保留在台账的 `论文来路树` 和 `研究方向索引` 中，不在首页摘要中写作活跃状态。以上状态只按已确认台账口径展示。`submitted`、`submitted_to_editorial_office`、`with editor`、`under review` 不等于接收、录用、发表或 DOI。
+近期拒稿 / 关闭 / 改投来路保留在台账的 `论文来路树` 和 `研究方向索引` 中，不在首页摘要中写作活跃状态。以上状态只按已确认台账口径展示。`submitted`、`submission_received`、`submitted_to_editorial_office`、`initial_technical_check`、`with editor`、`under review` 或 `Major Revisions requested` 不等于接收、录用、发表、DOI、外部验证或真实部署。
 
 ## 最新应用方向：数字纪检与执行可信审计
 
