@@ -1,115 +1,12 @@
-<!-- language-switch:start -->
-[English](./README.md) | [中文](./README.zh-CN.md)
-<!-- language-switch:end -->
+# 张斌｜SAEE
 
-# 张斌
+个人主页已统一为中文优先的 SAEE 产品入口，请阅读仓库根目录 [`README.md`](README.md)。
 
-Independent researcher building the Digital Biosphere Architecture and Agent Evidence Profile for governable, replay-verifiable, and audit-ready AI agents.
+规范入口：
 
-## Role
+- [SAEE 智能体可靠性评估基础设施](https://github.com/joy7758/SAEE)
+- [SAEE 中文官网](https://redcrag.cn/)
+- [SAEE 智能体接口](https://redcrag.cn/for-agents)
+- [SAEE Zenodo concept DOI](https://doi.org/10.5281/zenodo.21135471)
 
-我的当前研究主线，是围绕 persona、interaction、governance、execution integrity 和 audit 五层来组织日益自治的 AI 系统。
-
-这个首页是 architecture 与 evidence 双入口主线的公开索引，不是单一 agent 产品主页。
-
-## 最新论文
-
-- **A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows** 已在线发表于 *Journal of Imaging Informatics in Medicine*。DOI：[10.1007/s10278-026-02019-6](https://doi.org/10.1007/s10278-026-02019-6)。Springer Nature SharedIt view-only 链接：[https://rdcu.be/fk6Qd](https://rdcu.be/fk6Qd)。
-
-## 论文台账和研究方向
-
-- GitHub 可读台账：[Manuscript status ledger](https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md)
-- 研究方向索引：[Research direction index](https://github.com/joy7758-research/papers-index/blob/main/docs/status/MANUSCRIPT_STATUS.md#%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E7%B4%A2%E5%BC%95)
-- 台账最后同步日期：**2026-06-29**
-
-当前公开摘要按台账保守口径展示：Digital Biosphere / Supercomputing、Data & Policy `DAP-2026-0249`、JSS / ECL execution IR、SP&E `4563331`、EMSE `EMSE-D-26-00609`、CSI `CSI-D-26-00686`、JDIM-JIIM `JDIM-D-26-01809` 与 AI Act / `TSE-2026-04-0381` 分别保留为对应的活跃、submitted、with-editor 或 under-review 状态。`submitted`、`submitted_to_editorial_office`、`with editor`、`under review` 不等于接收、录用、发表或 DOI。
-
-## Dual entry
-
-- [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) = canonical architecture hub
-- [agent-evidence](https://github.com/joy7758/agent-evidence) = concrete execution-evidence entry
-
-## For architecture readers
-
-- 先从 [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture) 进入，理解系统视角、仓库角色和五层地图。
-- 如果你需要看某一层的定义，再进入相应的 layer repo。
-
-## For evidence readers
-
-- [agent-evidence](https://github.com/joy7758/agent-evidence) 看具体的 execution-evidence package 和离线验证路径
-- [verifiable-agent-demo](https://github.com/joy7758/verifiable-agent-demo) 看最短 walkthrough
-- [aro-audit](https://github.com/joy7758/aro-audit) 看 audit control plane 和 post-execution review
-
-## Core layer repos
-
-- [persona-object-protocol](https://github.com/joy7758/persona-object-protocol) = persona layer
-- [agent-intent-protocol](https://github.com/joy7758/agent-intent-protocol) = interaction layer
-- [token-governor](https://github.com/joy7758/token-governor) = governance layer
-- [fdo-kernel-mvk](https://github.com/joy7758/fdo-kernel-mvk) = execution-integrity layer
-- [aro-audit](https://github.com/joy7758/aro-audit) = audit layer
-
-## Supporting Annexes
-
-- [agent-object-protocol](https://github.com/joy7758/agent-object-protocol) 提供相邻互操作性和支持协议工作。
-- [agent-governance-benchmark](https://github.com/joy7758/agent-governance-benchmark) 提供评估场景和指标。
-- [docs/profile-bio-finalists.md](./docs/profile-bio-finalists.md) 保留简短 bio 页面。
-
-首页继续省略各类薄适配器和实现特定集成。
-
-## Legacy Lineage
-
-- [pFDO-规范](https://github.com/joy7758/pFDO-Specification) — 早期 DPP 工作的历史背景，而不是当前的核心堆栈。
-- [redrock-opendpp-core](https://github.com/joy7758/redrock-opendpp-core) — DPP 实现工作的先前沿袭，而不是当前的核心堆栈。
-- [MCP-Legal-China](https://github.com/joy7758/MCP-Legal-China) — 相邻法律/工具工作的历史背景，而不是当前的核心堆栈。
-- [Kinetic-Robotics-FDO-Sovereignty](https://github.com/joy7758/Kinetic-Robotics-FDO-Sovereignty) — 主权/K-RFS 探索的历史背景，而不是当前的核心堆栈。
-- [AASP-Core](https://github.com/joy7758/AASP-Core) — 先前的沿袭仓库，而不是当前的核心堆栈。
-- [ISAS-Core](https://github.com/joy7758/ISAS-Core) — 先前的沿袭仓库，而不是当前的核心堆栈。
-- [edo-architecture-index](https://github.com/joy7758/edo-architecture-index) — 历史索引材料，而不是当前的核心堆栈。
-
-## 五层地图
-
-```mermaid
-flowchart LR
-    Persona["Persona Layer<br>POP"] --> Interaction["Interaction Layer<br>Agent Intent Protocol"]
-    Interaction --> Governance["Governance Layer<br>Token Governor"]
-    Governance --> Execution["Execution Integrity Layer<br>MVK"]
-    Execution --> Audit["Audit Layer<br>ARO-Audit"]
-```
-
-|层 |仓库 |
-| --- | --- |
-|角色| `persona-object-protocol` |
-|互动| `agent-intent-protocol` |
-|治理| `token-governor` |
-|执行诚信 | `fdo-kernel-mvk` |
-|审计| `aro-audit` |
-
-支持证据基材：`agent-evidence`
-
-演练演示：`verifiable-agent-demo`
-
-## 研究方向
-
-- 协议化数字对象
-- 运行时治理
-- 可重放验证的执行完整性
-- 审计准备证据和审查
-
-## 身份/链接
-
-- [ORCID](https://orcid.org/0009-0002-8861-1481)
-- [数字生物圈架构](https://github.com/joy7758/digital-biosphere-architecture)
-- [角色对象协议](https://github.com/joy7758/persona-object-protocol)
-- [智能体意图协议](https://github.com/joy7758/agent-intent-protocol)
-- [代币监管者](https://github.com/joy7758/token-governor)
-- [fdo-内核-mvk](https://github.com/joy7758/fdo-kernel-mvk)
-- [aro-审计](https://github.com/joy7758/aro-audit)
-
-## 地位
-
-- 公共研究面
-- 主动整合中的五层堆栈
-- 为沿袭保留的遗留仓库，而不是作为主要入口点
-
-<!-- profile-render-refresh -->
-<!-- render-refresh: 20260629T000000Z -->
+正式身份：Silicon-Amplified Evolutionary Ecology。工程核心：Digital Biosphere Evolution Engine。
