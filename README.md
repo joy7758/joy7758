@@ -19,7 +19,7 @@
 
 ## 我正在构建什么
 
-我是张斌（Bin Zhang），独立研究者。当前主线是 **SAEE（Silicon-Amplified Evolutionary Ecology，硅基放大演化生态）**：一个以 Digital Biosphere Evolution Engine 为工程核心、面向 AI 智能体长期演练与可靠性判断的产品和研究体系。
+当前主线是 **SAEE（Silicon-Amplified Evolutionary Ecology，硅基放大演化生态）**：一个以 Digital Biosphere Evolution Engine 为工程核心、面向 AI 智能体长期演练与可靠性判断的产品和研究体系。
 
 SAEE 关心的不是“模型这一次答得好不好”，而是：
 
