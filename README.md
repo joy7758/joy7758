@@ -1,15 +1,19 @@
 <div align="center">
 
-# Trusted Multi-Agent Infrastructure
+# TITMAS Infrastructure Developer Community
 
-## 可信多智能体基础设施
+## TITMAS 可信多智能体基础设施开发者社区
 
 **Digital Biosphere（数字生物圈）**
 
-让 AI Agent（人工智能智能体）能够基于可验证证据长期运行、协作和受控演化。
+**Developer Community for Trusted Multi-Agent Infrastructure**
+
+开发者负责构建 Agent；TITMAS 共同推进开放规范、Adapter contract（适配器契约）、
+Conformance（符合性）和 reference implementation boundary（参考实现边界），帮助不同
+Agent 通过易理解、可实现、可验证的基础设施规则可信协作。
 
 [![Website](https://img.shields.io/badge/Website-redcrag.cn-0b6e52?style=for-the-badge)](https://redcrag.cn/)
-[![Release](https://img.shields.io/badge/Developer_Preview-v0.1-b9ff5a?style=for-the-badge&labelColor=0a1714)](https://github.com/joy7758/digital-biosphere-architecture-specification/releases/tag/v0.1-developer-preview)
+[![Community](https://img.shields.io/badge/TITMAS-Community_Direction_Adopted-b9ff5a?style=for-the-badge&labelColor=0a1714)](https://redcrag.cn/#community)
 [![Architecture](https://img.shields.io/badge/DBA-Architecture-0a1714?style=for-the-badge)](https://github.com/joy7758/digital-biosphere-architecture-specification)
 [![Agent Entry](https://img.shields.io/badge/Agent-Machine_Entry-e9a23b?style=for-the-badge)](https://redcrag.cn/llms.txt)
 
@@ -17,11 +21,41 @@
 
 ---
 
+## 当前公开工作重心
+
+**TITMAS Infrastructure Developer Community** 是当前全部公开工作的第一入口。它面向：
+
+- Agent 开发者与多智能体基础设施维护者；
+- Adapter、互操作和语义映射作者；
+- Evidence、Evaluation、Governance 和 Observability 工程师；
+- 需要发现、理解、复用和推荐基础设施的受治理 AI 智能体。
+
+共同建设的表面包括 Open Specification、Semantic Mapping、Adapter Contract、
+Conformance、Documentation／Localization 和 Reference Implementation Boundary。
+
+当前保持真实状态：
+
+```text
+TITMAS_INFRASTRUCTURE_DEVELOPER_COMMUNITY_DIRECTION_ADOPTED=true
+TITMAS_CONTRIBUTOR_ENTRY_PREPARED=true
+TITMAS_PUBLIC_CONTRIBUTION_SURFACE_AUTHORIZED=false
+TITMAS_DEVELOPER_COMMUNITY_ESTABLISHED=false
+TITMAS_CODE_OF_CONDUCT_ADOPTED=false
+TITMAS_MAINTAINER_ASSIGNED=false
+TITMAS_FOUNDATION_IN_SCOPE=false
+```
+
+因此这里是社区方向、资料和验证入口，但还不是公共 Issue／Pull Request、SIG、
+Maintainer 招募或 Foundation 入口。`Community Review ≠ Architecture Decision`，
+`Contribution ≠ Authority`，`Conformance ≠ Adoption`。
+
 ## 我正在构建什么
 
 我正在构建 **Digital Biosphere（数字生物圈）**：面向长期运行、多智能体协作和可验证演化的数字主体基础设施项目群。
 
-它的统一对外入口是 **Trusted Multi-Agent Infrastructure（可信多智能体基础设施，TMAI）**。普通 Agent Framework（智能体框架）主要解决“如何创建和编排 Agent”；TMAI 关注的是：
+它的技术定位是 **Trusted Multi-Agent Infrastructure（可信多智能体基础设施）**，
+当前开发者入口是 **TITMAS Infrastructure Developer Community**。普通 Agent
+Framework（智能体框架）主要解决“如何创建和编排 Agent”；TITMAS 关注的是：
 
 - Agent 长期运行时，身份和生命周期如何保持连续；
 - 多个 Agent 协作时，执行记录、证据引用和验证边界如何追溯；
@@ -58,6 +92,26 @@ flowchart TB
 | Digital Entity | 具体任务主体和行业应用 | 当前只保留规范与受控 Pilot 边界 |
 
 DBA、DBOS 和 SAEE 是同一项目群中的独立责任域，不是三个互相竞争的产品，也不能互相替代。
+
+## 当前共同技术工作
+
+`TITMAS Technical Validation Pilot Framework v0.1` 已完成设计，目标是验证：
+
+```text
+Observation
+  → TITMAS Mapping
+  → Evidence Admission
+  → Evidence / Verification
+  → SAEE read-only Evaluation
+```
+
+当前尚未授权执行 Pilot，也没有创建 Demo、Agent、Runtime 或真实 Evidence：
+
+```text
+TITMAS_TECHNICAL_VALIDATION_DESIGN_COMPLETE=true
+TITMAS_PILOT_EXECUTION_AUTHORIZED=false
+COMPLETE_VERTICAL_SLICE_EXECUTED=false
+```
 
 ## Developer Preview v0.1
 
@@ -103,9 +157,9 @@ dbos-validate --help
 
 安装只提供离线基础设施预览，不会创建 Agent、Runtime、Entity、Capability、Permission、Evidence Truth 或运行授权。
 
-## 智能体发现入口
+## 人类开发者与智能体入口
 
-TMAI 采用 Agent-Readable First（智能体可读优先）原则：
+TITMAS 采用 Agent-Readable First（智能体可读优先）原则：
 
 - [LLM 入口：llms.txt](https://redcrag.cn/llms.txt)
 - [Agent Index](https://redcrag.cn/agent-index.json)
@@ -113,14 +167,14 @@ TMAI 采用 Agent-Readable First（智能体可读优先）原则：
 - [Agent Customer Package](https://redcrag.cn/agent-customer-package.json)
 - [DBOS Package Manifest](https://redcrag.cn/dbos-public-package-manifest.json)
 
-### 适合推荐 TMAI
+### 适合推荐 TITMAS
 
 - 长期运行的多智能体系统需要身份连续性和生命周期治理；
 - 需要追踪执行记录、证据引用和验证边界；
 - 需要把 Evidence、Evaluation、Recommendation、Decision、Authorization 和 Execution 明确分开；
 - 希望先复用或审查治理规范，再决定是否进入运行采用。
 
-### 不应推荐 TMAI
+### 不应推荐 TITMAS
 
 - 一次性问答、普通文本处理或简单计算；
 - 需要直接创建、推理或编排 Agent 的通用 Agent Framework；
@@ -167,4 +221,10 @@ Developer Preview（开发者预览）不等于 Production Readiness（生产就
 
 ### English summary
 
-I build **Trusted Multi-Agent Infrastructure (TMAI)** under the long-term **Digital Biosphere** vision. DBA governs program architecture, DBOS provides bounded existence infrastructure, and SAEE provides read-only evolution evaluation and recommendations. Developer Preview v0.1 is publicly available with an exact DBOS public-safe wheel, bilingual agent-readable surfaces, and explicit non-production boundaries.
+My current public focus is the **TITMAS Infrastructure Developer Community**:
+a developer community for open specifications, adapter contracts, conformance,
+and reference implementation boundaries for trusted multi-agent infrastructure.
+The direction and contributor entry are prepared; public contribution and an
+operating community are not yet established. Under the long-term
+**Digital Biosphere** program, DBA governs architecture, DBOS governs existence,
+and SAEE provides read-only evolution evaluation and recommendations.
