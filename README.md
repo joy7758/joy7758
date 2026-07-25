@@ -137,6 +137,46 @@ open_web_discovery=PARTIAL_METADATA_ONLY
 dbos_repository_visibility=PRIVATE
 ```
 
+## Demos / Research Demonstrations（演示／研究演示）
+
+### DEB-001 Lite — Reproducible Digital Ecology Demo
+
+**DEB-001 Lite — 可复现数字生态演示**
+
+> **Positioning / 定位：Reproducible Research Demo（可复现研究演示）**
+
+A minimal rule-based digital ecology simulation with nine agents across Stable,
+Shock, and Recovery phases. Validation-003 produced an identity-linked selection
+event under a fixed seed while preserving deterministic replay and SHA-256
+evidence verification.
+
+一个包含 9 个规则型个体的最小数字生态模拟器，依次经历稳定、冲击和恢复阶段。
+Validation-003 在固定种子下产生了带身份的选择事件，同时保持确定性重放和 SHA-256
+证据校验。
+
+It demonstrates observable selection dynamics and evidence traceability. It is
+a future reference use case for TITMAS evidence infrastructure, not a current
+TITMAS runtime integration.
+
+该演示用于展示可观察的选择动力学和证据可追溯性，并作为 TITMAS 证据基础设施未来的
+参考用例；它当前未集成 TITMAS Runtime（运行时）。
+
+- [Demo（演示）](https://github.com/joy7758/digital-biosphere-research-agent-pilot/tree/main/prototype/deb001-lite-simulator)
+- [Frozen Baseline（冻结基线）](https://github.com/joy7758/digital-biosphere-research-agent-pilot/blob/main/prototype/deb001-lite-simulator/output/DEB-001-LITE-VALIDATION-003/DEB-001-LITE-VALIDATION-003-BASELINE-v0.1.md)
+- [Validation Report（验证报告）](https://github.com/joy7758/digital-biosphere-research-agent-pilot/blob/main/prototype/deb001-lite-simulator/output/DEB-001-LITE-VALIDATION-003/DEB-001-LITE-VALIDATION-003-REPORT.md)
+
+```text
+DEMO_CLASS=REPRODUCIBLE_RESEARCH_DEMO
+OBSERVABLE_SELECTION_DYNAMICS=true
+EVIDENCE_TRACEABILITY=true
+TITMAS_REFERENCE_USE_CASE=future
+TITMAS_RUNTIME_INTEGRATED=false
+DST_VALIDATED=false
+SCIENTIFIC_LAW_DISCOVERED=false
+ALPHA_APPROVED=false
+PRODUCTION_READY=false
+```
+
 ## 安装有界 DBOS Developer Preview
 
 要求：Python `>=3.11`。安装前请验证 SHA-256。
