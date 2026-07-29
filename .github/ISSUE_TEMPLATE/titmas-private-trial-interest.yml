@@ -1,0 +1,114 @@
+name: TITMAS private trial interest
+description: Register non-binding interest in a future bounded private developer trial.
+title: "[TITMAS Trial Interest] "
+labels:
+  - trial-interest
+  - candidate-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you continue
+
+        This public form collects non-confidential interest only. It does not
+        authorize a trial slot, private repository access, an invitation,
+        community role, certification, standard adoption, or a
+        commercial offer.
+
+        Do not include personal data, customer data, confidential or production
+        data, API keys, private repository information, or other secrets.
+
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub username
+      description: Provide only the public GitHub username to be reviewed.
+      placeholder: "@octocat"
+    validations:
+      required: true
+
+  - type: input
+    id: agent_framework_or_runtime
+    attributes:
+      label: Agent framework or Runtime
+      description: Name the public framework, Runtime, or integration surface you use.
+      placeholder: "For example: LangChain, CrewAI, MCP, or a custom Runtime"
+    validations:
+      required: true
+
+  - type: input
+    id: development_language
+    attributes:
+      label: Development language
+      description: List only the programming language relevant to the proposed trial.
+      placeholder: "For example: Python or TypeScript"
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_confidential_use_case
+    attributes:
+      label: Non-confidential use case
+      description: Describe a bounded use case without personal, customer, confidential, or production information.
+      placeholder: "Describe the Agent workflow and the trust boundary you want to evaluate."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: preferred_contribution_type
+    attributes:
+      label: Preferred contribution type
+      description: Select one possible contribution. Selection does not authorize a task.
+      options:
+        - Negative Test Vector
+        - Adapter Mapping
+        - Specification Proposal
+        - SDK usability feedback
+        - Documentation feedback
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experience_level
+    attributes:
+      label: Experience level
+      description: Choose the closest non-identifying description.
+      options:
+        - Exploring — first Agent infrastructure contribution
+        - Practical — built or integrated Agent applications
+        - Experienced — maintains Agent infrastructure or standards
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_trial_outcome
+    attributes:
+      label: Expected trial outcome
+      description: State what you hope to learn or validate; do not include confidential success criteria.
+      placeholder: "For example: evaluate whether a negative Test Vector is easy to prepare and interpret."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: data_scope_confirmation
+    attributes:
+      label: Data-scope confirmation
+      description: Every item is required.
+      options:
+        - label: I will not submit personal data.
+          required: true
+        - label: I will not submit customer data.
+          required: true
+        - label: I will not submit confidential or production data.
+          required: true
+
+  - type: checkboxes
+    id: confidentiality_acknowledgement
+    attributes:
+      label: Confidentiality acknowledgement
+      description: Every item is required.
+      options:
+        - label: I understand that registering interest does not grant repository access.
+          required: true
+        - label: I understand that Conformance is not certification or standard adoption.
+          required: true
