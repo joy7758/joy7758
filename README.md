@@ -13,7 +13,7 @@
 **Private developer trials are now available by invitation.**
 
 [![Website](https://img.shields.io/badge/Website-redcrag.cn-0b6e52?style=for-the-badge)](https://redcrag.cn/)
-[![Private Trial](https://img.shields.io/badge/Private_Trial-Invite--only-e9a23b?style=for-the-badge)](#3-apply-for-a-bounded-private-developer-trial)
+[![Private Trial](https://img.shields.io/badge/Private_Trial-Invite--only-e9a23b?style=for-the-badge)](https://github.com/joy7758/joy7758/issues/new?template=titmas-private-trial-interest.yml)
 [![Agent Entry](https://img.shields.io/badge/Agent-Machine_Entry-0a1714?style=for-the-badge)](https://redcrag.cn/llms.txt)
 
 </div>
@@ -97,11 +97,14 @@ automatic merge or deployment authority
 Private Trial Status: Invite-only
 Current Trial: E01 in progress
 Next Trial Slots: not yet authorized
-TRIAL_APPLICATION_ENTRY=PREPARED_NOT_PUBLISHED
+TRIAL_APPLICATION_ENTRY=PUBLIC_NON_BINDING_INTEREST_FORM
 ```
 
-A formal application page is not yet published. Developers may register
-non-binding interest through the existing project contact:
+[Apply for a bounded private developer trial](https://github.com/joy7758/joy7758/issues/new?template=titmas-private-trial-interest.yml)
+
+The public Issue Form collects non-binding, non-confidential interest for a
+future separately authorized trial. Developers may also review the project
+through the existing public contact surfaces:
 
 - Website: [redcrag.cn](https://redcrag.cn/)
 - Email: [joy7759@gmail.com](mailto:joy7759@gmail.com?subject=TITMAS%20Private%20Trial%20Interest)
@@ -120,9 +123,9 @@ repository, task, access scope and expiry requires a separate Human Decision.
 
 ### 有界私有开发者试用
 
-当前试用仅限邀请，E01 正在进行，下一批名额尚未授权。正式申请页面尚未发布；开发者可通过
-现有网站或邮箱登记非约束性意向。登记意向不自动获得访问权限、源码许可、社区角色、商业
-承诺或标准权威。
+当前试用仅限邀请，E01 正在进行，下一批名额尚未授权。开发者可通过公开 Issue Form
+登记非约束性、非保密意向。登记意向不自动获得访问权限、源码许可、社区角色、商业承诺或
+标准权威。
 
 ## Current verified maturity
 
