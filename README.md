@@ -1,175 +1,123 @@
-<div align="center">
+# Bin Zhang — Trustworthy Infrastructure for Autonomous AI Systems
 
-# TITMAS
+I am a **Research Engineer building trustworthy infrastructure for autonomous AI systems**.
 
-## Trusted Multi-Agent Infrastructure Standards and Developer Community
+My work focuses on execution evidence, evaluation, identity and provenance, failure analysis, and bounded agent actions for **autonomous experimental loops**: the infrastructure required to understand what an autonomous system did, under which conditions, whether the result can be checked independently, and whether a proposed change should be adopted.
 
-### 可信多智能体基础设施标准与开发者社区
+My current research direction is **DCELL**:
 
-**Build your Agent product with:**<br>
-**Specification + SDK + Sandbox + scoped access**
+> How can autonomous AI systems become minimal, independently identifiable, evidence-producing, experience-preserving, and evolvable digital entities?
 
-**Confidential core remains private.**<br>
-**Private developer trials are now available by invitation.**
+**Status: `RESEARCH_DIRECTION`.** DCELL is an organizing research question, not a finished platform. Complete autonomous adaptation, cross-generation experience inheritance, and multi-system capability growth remain unverified hypotheses.
 
-[![Website](https://img.shields.io/badge/Website-redcrag.cn-0b6e52?style=for-the-badge)](https://redcrag.cn/)
-[![Private Trial](https://img.shields.io/badge/Private_Trial-Invite--only-e9a23b?style=for-the-badge)](https://github.com/joy7758/joy7758/issues/new?template=titmas-private-trial-interest.yml)
-[![Agent Entry](https://img.shields.io/badge/Agent-Machine_Entry-0a1714?style=for-the-badge)](https://redcrag.cn/llms.txt)
+## Selected public evidence
 
-</div>
+### [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo)
+
+A bounded public path for observing an agent execution and producing evidence that can be inspected and checked.
+
+- **Status:** minimal public path `EXPERIMENTALLY_SUPPORTED`; broader path `PROTOTYPE`.
+- **Evidence:** the minimal path ran in the 2026-08-08 audit, and public build/verification checks were visible at the audited revision.
+- **Limit:** full and enterprise paths depend on private extensions and are not independently reproducible from the public repository alone.
+
+### [SAEE](https://github.com/joy7758/SAEE)
+
+Experimental infrastructure for agent health assessment and candidate-change evaluation.
+
+- **Status:** `EXPERIMENTALLY_SUPPORTED`.
+- **Evidence:** the audited revision passed 84 local unit tests, a consolidation smoke path, and a bounded public demo.
+- **Limit:** the audited revision did not expose source-test CI; this is experimental evidence, not a claim of autonomous self-improvement or production readiness.
+
+### [TITMAS Agent Action Gate](https://github.com/joy7758/titmas-agent-action-gate)
+
+Evidence-aware contracts for bounded agent actions, negative evidence, and explicit authorization boundaries.
+
+- **Status:** tested contract surface `IMPLEMENTED`; broader runtime governance `EXPERIMENTALLY_SUPPORTED`.
+- **Evidence:** current public contract checks passed at the audited revision.
+- **Limit:** passing contract checks does not establish a complete autonomous runtime or independent decision authority.
+
+## Evidence maturity
+
+### Implemented
+
+- The tested contract surface in `titmas-agent-action-gate`.
+- Tested, versioned identity and persona-object surfaces in [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol).
+
+`IMPLEMENTED` refers only to the bounded technical surfaces directly supported by code, tests, or CI.
+
+### Experimentally Supported
+
+- The minimal public execution-evidence path in `verifiable-agent-demo`.
+- Agent health and candidate-change evaluation paths in `SAEE`.
+- Broader evidence-aware governance patterns around the tested action-gate contracts.
+
+`EXPERIMENTALLY_SUPPORTED` means that a runnable experiment supports a limited claim; it does not imply generality or operational readiness.
+
+### Prototype
+
+- [TITMAS Demo](https://github.com/joy7758/titmas-demo), an **early engineering seed and first experimental instance of the DCELL research direction**. It is a deterministic prototype for observable, verifiable, and health-assessable agent execution.
+- The broader public/private integration path around `verifiable-agent-demo`.
+- [TEK](https://github.com/joy7758/tek-system), a seeded stress and candidate-change evaluation prototype.
+
+TITMAS is not the central controller of DCELL. It is retained as an early engineering experiment that should remain observable, replaceable, evolvable, and bypassable. The public demo does not establish a complete Cell lifecycle.
+
+### Research Direction
+
+- **DCELL:** evidence-driven, bounded, replaceable, and evolvable autonomous systems.
+- Experience continuity: preserving validated success and failure records with provenance, scope, expiry, and revocation.
+- Evaluation before adoption: comparing baseline and candidate behavior before a change becomes actionable.
+
+These are active technical questions, not completion claims.
+
+### Future Hypothesis
+
+- Evidence-backed experience can transfer safely across agents or generations without propagating stale or unsupported conclusions.
+- A bounded autonomous component can be replaced or bypassed without losing experiment lineage, verification, or rollback capability.
+- Multiple bounded systems can create increasing capability without depending on one irreplaceable controller.
+
+These hypotheses require public experiments, baselines, negative cases, and reproducible results.
+
+## Problems I want to solve in autonomous discovery systems
+
+- Who performed an experiment, and under which model, tools, environment, and configuration?
+- What happened during execution, and can another system verify it independently?
+- Can results be reproduced after dependencies or environments change?
+- Did a candidate modification improve the system relative to a locked baseline?
+- Can failed experiments become scoped, revocable, reusable experience?
+- How should evidence, evaluation, authorization, and action remain separate?
+
+My strongest public evidence is in **agents, infrastructure, and evaluations**. Environment capture is partial: I have not yet demonstrated a complete portable environment capsule or multi-environment conformance suite.
+
+## Engineering approach
+
+I prefer:
+
+- source-locked, reproducible artifacts;
+- explicit positive and negative tests;
+- content-addressed evidence and versioned identities;
+- visible failures and known limitations;
+- evaluation before adoption;
+- fail-closed behavior when evidence or authority is missing;
+- clear separation between technical verification and authorization.
+
+```text
+observation != evidence
+evidence != verification
+verification != evaluation
+evaluation != authorization
+authorization != decision
+decision != execution
+specification != implementation
+```
+
+A passing test, CI run, release, DOI, or successful demo supports only the artifact and scope it directly checks. It does not by itself establish scientific truth, production readiness, external adoption, or permission to act.
+
+## Research ownership and AI-assisted implementation
+
+I use AI coding agents as implementation and review tools. Research questions, experiment design, acceptance criteria, architectural decisions, evidence interpretation, failure analysis, and authorization decisions remain human-owned.
+
+I use reproducible artifacts, negative cases, decision records, and explicit limitations to make that ownership inspectable.
 
 ---
 
-## 1. What TITMAS solves
-
-Agent frameworks help developers create and orchestrate Agents. TITMAS focuses
-on the infrastructure boundaries that become important when multiple Agents
-operate for a long time:
-
-- **Identity** — which Agent or digital entity acted?
-- **Capability boundary** — what was it allowed to attempt?
-- **Execution record** — what occurred?
-- **Evidence boundary** — what material supports the record?
-- **Verification** — did the object follow the declared rules?
-- **Evaluation interface** — how can long-term reliability be assessed without
-  turning evaluation into authority?
-
-TITMAS is not an Agent Runtime, general Agent framework, confidential-source
-distribution channel, certification authority or canonical truth store.
-
-> Evidence is not Truth. Verification is not Authorization.<br>
-> Conformance is not Adoption. Recommendation is not Decision.
-
-### TITMAS 解决什么
-
-Agent Framework（智能体框架）解决创建和编排 Agent。TITMAS 关注多个 Agent
-长期运行时的共同可信边界：身份连续、能力范围、执行记录、证据来源、规则验证和长期评价
-接口。TITMAS 不创建 Agent，也不把符合性结果升级为认证、权限或标准采纳。
-
-## 2. How developers build on TITMAS
-
-Developers receive bounded, reviewable surfaces:
-
-| Developer surface | Purpose |
-|---|---|
-| **Standards** | Stable vocabulary, object boundaries and failure semantics |
-| **Schemas** | Machine-readable structures for validation and interoperability |
-| **SDK** | Bounded client helpers for the published trial contract |
-| **Examples** | Synthetic, non-confidential learning material |
-| **Sandbox** | Controlled validation against the declared contract |
-| **Scoped trial access** | Time-limited access to a separate private trial surface |
-
-A typical bounded path is:
-
-```text
-Discover the machine-readable entry
-  → choose one bounded task
-  → use the SDK and synthetic examples
-  → run local preflight
-  → submit through the approved trial path
-  → receive Conformance output
-  → wait for Human Maintainer disposition
-```
-
-Developers do **not** receive:
-
-```text
-confidential core source
-internal tests
-private governance
-automatic standard authority
-automatic merge or deployment authority
-```
-
-开发者获得规范、Schema、SDK、合成示例、Sandbox 和有范围的试用访问。开发者不因试用
-获得机密核心源码、内部测试、私有治理材料或自动标准权威。
-
-### Public machine-readable entry
-
-- [TITMAS website](https://redcrag.cn/)
-- [LLM entry](https://redcrag.cn/llms.txt)
-- [Agent index](https://redcrag.cn/agent-index.json)
-- [Machine-readable status](https://redcrag.cn/status.json)
-
-## 3. Apply for a bounded private developer trial
-
-```text
-Private Trial Status: Invite-only
-Current Trial: E01 in progress
-Next Trial Slots: not yet authorized
-TRIAL_APPLICATION_ENTRY=PUBLIC_NON_BINDING_INTEREST_FORM
-```
-
-[Apply for a bounded private developer trial](https://github.com/joy7758/joy7758/issues/new?template=titmas-private-trial-interest.yml)
-
-The public Issue Form collects non-binding, non-confidential interest for a
-future separately authorized trial. Developers may also review the project
-through the existing public contact surfaces:
-
-- Website: [redcrag.cn](https://redcrag.cn/)
-- Email: [joy7759@gmail.com](mailto:joy7759@gmail.com?subject=TITMAS%20Private%20Trial%20Interest)
-
-Please include only:
-
-- GitHub username;
-- Agent framework or Runtime being evaluated;
-- a short, non-confidential validation scenario;
-- confirmation that no personal, customer, confidential or production data
-  will be submitted.
-
-Registering interest does not create a trial slot, contract, commercial offer,
-source licence, community role or standard authority. Each participant,
-repository, task, access scope and expiry requires a separate Human Decision.
-
-### 有界私有开发者试用
-
-当前试用仅限邀请，E01 正在进行，下一批名额尚未授权。开发者可通过公开 Issue Form
-登记非约束性、非保密意向。登记意向不自动获得访问权限、源码许可、社区角色、商业承诺或
-标准权威。
-
-## Current verified maturity
-
-```text
-TITMAS_STAGE_5_PRIVATE_PREVIEW_OPERATIONAL=true
-TITMAS_STAGE_5_1_PRIVATE_TRIAL_CHANNEL_READY=true
-
-FIRST_EXTERNAL_HUMAN_DEVELOPER_TRIAL_COMPLETE=false
-PUBLIC_PROTOCOL_RELEASED=false
-COMMERCIAL_ECOSYSTEM_ESTABLISHED=false
-TITMAS_COMMUNITY_ESTABLISHED=false
-```
-
-`ready`, `operational`, `in progress`, `complete`, `released`, `adopted` and
-`production ready` are separate states. E01 being in progress is not evidence
-of trial success, customer adoption, market validation or community
-establishment.
-
-## Architecture boundaries
-
-```text
-DBA != DBOS != SAEE
-TITMAS != Agent Runtime
-TITMAS != confidential core source
-Capability != Permission
-Evidence != Truth
-Verification != Authorization
-Evaluation != Authority
-Recommendation != Decision
-Decision != Execution
-Conformance != Adoption
-```
-
-Developers build Agent products. TITMAS provides bounded standards,
-interoperability contracts, Conformance assets and reference surfaces. The
-confidential core and private governance remain private.
-
-## Contact and research
-
-- Website: [redcrag.cn](https://redcrag.cn/)
-- GitHub: [github.com/joy7758](https://github.com/joy7758)
-- ORCID: [0009-0002-8861-1481](https://orcid.org/0009-0002-8861-1481)
-- Email: [joy7759@gmail.com](mailto:joy7759@gmail.com)
-
-Public research and developer materials are indexed from the website. Research,
-reference artifacts and trial outputs do not imply production readiness,
-certification or commercial availability.
+Audit snapshot: 2026-08-08. Claims should be rechecked when repository revisions, dependencies, CI, or visibility change.
