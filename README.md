@@ -1,123 +1,128 @@
-# Bin Zhang — Trustworthy Infrastructure for Autonomous AI Systems
+# 张斌｜为自主 AI 系统构建可信基础设施
 
-I am a **Research Engineer building trustworthy infrastructure for autonomous AI systems**.
+我是一名研究工程师，正在研究和构建面向自主 AI 系统的可信基础设施。
 
-My work focuses on execution evidence, evaluation, identity and provenance, failure analysis, and bounded agent actions for **autonomous experimental loops**: the infrastructure required to understand what an autonomous system did, under which conditions, whether the result can be checked independently, and whether a proposed change should be adopted.
+我关心的不只是“智能体能不能完成任务”，还包括几个更基本的问题：它做了什么、在什么条件下做的、留下了哪些证据、别人能不能独立检查，以及一次修改是否真的值得采用。
 
-My current research direction is **DCELL**:
+## 当前研究主线：DCELL（数字细胞）
 
-> How can autonomous AI systems become minimal, independently identifiable, evidence-producing, experience-preserving, and evolvable digital entities?
+我正在围绕一个问题展开研究：
 
-**Status: `RESEARCH_DIRECTION`.** DCELL is an organizing research question, not a finished platform. Complete autonomous adaptation, cross-generation experience inheritance, and multi-system capability growth remain unverified hypotheses.
+> 一个自主 AI 系统，怎样才能拥有清晰的身份，持续留下可验证的证据，保留有用的经验，并在边界明确的前提下逐步演化？
 
-## Selected public evidence
+DCELL 目前仍处于**研究方向（`RESEARCH_DIRECTION`）**阶段，不是已经完成的平台。完整的自主适应、跨代经验继承，以及多个系统协作后的能力增长，目前都还没有得到充分验证。
+
+## 目前最有代表性的公开工作
 
 ### [Verifiable Agent Demo](https://github.com/joy7758/verifiable-agent-demo)
 
-A bounded public path for observing an agent execution and producing evidence that can be inspected and checked.
+这是一个有明确边界的公开示例，用来观察一次智能体执行，并生成可以查看和复核的执行证据。
 
-- **Status:** minimal public path `EXPERIMENTALLY_SUPPORTED`; broader path `PROTOTYPE`.
-- **Evidence:** the minimal path ran in the 2026-08-08 audit, and public build/verification checks were visible at the audited revision.
-- **Limit:** full and enterprise paths depend on private extensions and are not independently reproducible from the public repository alone.
+- **目前进展：** 最小公开路径已有实验支持（`EXPERIMENTALLY_SUPPORTED`）；更完整的路径仍是原型（`PROTOTYPE`）。
+- **已有证据：** 在 2026 年 8 月 8 日的审计中，最小路径成功运行；当时对应版本的公开构建和验证检查也可以查看。
+- **还不能说明：** 完整版和企业版路径依赖私有扩展，无法只凭公开仓库独立复现。
 
 ### [SAEE](https://github.com/joy7758/SAEE)
 
-Experimental infrastructure for agent health assessment and candidate-change evaluation.
+SAEE 是一套实验性基础设施，用来评估智能体的健康状态，并比较候选修改到底带来了改善，还是引入了新的问题。
 
-- **Status:** `EXPERIMENTALLY_SUPPORTED`.
-- **Evidence:** the audited revision passed 84 local unit tests, a consolidation smoke path, and a bounded public demo.
-- **Limit:** the audited revision did not expose source-test CI; this is experimental evidence, not a claim of autonomous self-improvement or production readiness.
+- **目前进展：** 已有实验支持（`EXPERIMENTALLY_SUPPORTED`）。
+- **已有证据：** 审计版本通过了 84 项本地单元测试、一次基础整合测试和一个有边界的公开演示。
+- **还不能说明：** 当时的公开版本没有提供用于运行源代码测试的 CI；这些结果不代表系统已经能够自主改进，也不代表已经可以投入生产。
 
 ### [TITMAS Agent Action Gate](https://github.com/joy7758/titmas-agent-action-gate)
 
-Evidence-aware contracts for bounded agent actions, negative evidence, and explicit authorization boundaries.
+这个项目研究怎样根据证据约束智能体的行动，并明确记录负面证据和授权边界。
 
-- **Status:** tested contract surface `IMPLEMENTED`; broader runtime governance `EXPERIMENTALLY_SUPPORTED`.
-- **Evidence:** current public contract checks passed at the audited revision.
-- **Limit:** passing contract checks does not establish a complete autonomous runtime or independent decision authority.
+- **目前进展：** 已测试的契约层已经实现（`IMPLEMENTED`）；更广泛的运行时治理仍只有实验支持（`EXPERIMENTALLY_SUPPORTED`）。
+- **已有证据：** 审计版本中的公开契约检查已经通过。
+- **还不能说明：** 契约检查通过，不等于已经拥有完整的自主运行时，也不代表系统具备独立决策权。
 
-## Evidence maturity
+## 我怎样区分项目成熟度
 
-### Implemented
+为了避免把“做出来了”“跑过一次”和“已经成熟”混在一起，我会明确区分下面几种状态。
 
-- The tested contract surface in `titmas-agent-action-gate`.
-- Tested, versioned identity and persona-object surfaces in [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol).
+### 已实现（`IMPLEMENTED`）
 
-`IMPLEMENTED` refers only to the bounded technical surfaces directly supported by code, tests, or CI.
+- `titmas-agent-action-gate` 中已经过测试的契约层。
+- [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol)
+  中经过测试、带版本的身份与人格对象能力。
 
-### Experimentally Supported
+这里的“已实现”，只指代码、测试或 CI 能直接支持的那一小块技术能力，不代表整个系统已经完成。
 
-- The minimal public execution-evidence path in `verifiable-agent-demo`.
-- Agent health and candidate-change evaluation paths in `SAEE`.
-- Broader evidence-aware governance patterns around the tested action-gate contracts.
+### 已有实验支持（`EXPERIMENTALLY_SUPPORTED`）
 
-`EXPERIMENTALLY_SUPPORTED` means that a runnable experiment supports a limited claim; it does not imply generality or operational readiness.
+- `verifiable-agent-demo` 的最小公开执行证据路径。
+- `SAEE` 的智能体健康评估和候选修改评估路径。
+- 围绕 Action Gate 契约开展的证据治理实验。
 
-### Prototype
+这表示有限范围的实验支持了有限范围的结论，不等于已经适用于所有场景，也不等于可以直接投入生产。
 
-- [TITMAS Demo](https://github.com/joy7758/titmas-demo), an **early engineering seed and first experimental instance of the DCELL research direction**. It is a deterministic prototype for observable, verifiable, and health-assessable agent execution.
-- The broader public/private integration path around `verifiable-agent-demo`.
-- [TEK](https://github.com/joy7758/tek-system), a seeded stress and candidate-change evaluation prototype.
+### 原型（`PROTOTYPE`）
 
-TITMAS is not the central controller of DCELL. It is retained as an early engineering experiment that should remain observable, replaceable, evolvable, and bypassable. The public demo does not establish a complete Cell lifecycle.
+- [TITMAS Demo](https://github.com/joy7758/titmas-demo)：DCELL 研究方向的早期工程起点，也是第一个实验实例，用确定性的方式探索可观察、可验证、可评估健康状态的智能体执行。
+- `verifiable-agent-demo` 更完整的公开与私有整合路径。
+- [TEK](https://github.com/joy7758/tek-system)：用于压力测试和候选修改评估的早期原型。
 
-### Research Direction
+TITMAS 不是 DCELL 的中央控制器。它是一项早期工程实验，应该始终可以被观察、替换、演化或绕过。目前的公开 Demo 也没有证明完整的数字细胞生命周期已经建立。
 
-- **DCELL:** evidence-driven, bounded, replaceable, and evolvable autonomous systems.
-- Experience continuity: preserving validated success and failure records with provenance, scope, expiry, and revocation.
-- Evaluation before adoption: comparing baseline and candidate behavior before a change becomes actionable.
+### 研究方向（`RESEARCH_DIRECTION`）
 
-These are active technical questions, not completion claims.
+- **DCELL：** 研究由证据驱动、有明确边界、可以替换并能持续演化的自主系统。
+- **经验连续性：** 保存经过验证的成功和失败记录，同时保留来源、适用范围、有效期和撤销机制。
+- **采用前评估：** 先比较基线与候选行为，再决定一项修改能不能进入实际系统。
 
-### Future Hypothesis
+这些都是正在研究的技术问题，不是已经完成的能力。
 
-- Evidence-backed experience can transfer safely across agents or generations without propagating stale or unsupported conclusions.
-- A bounded autonomous component can be replaced or bypassed without losing experiment lineage, verification, or rollback capability.
-- Multiple bounded systems can create increasing capability without depending on one irreplaceable controller.
+### 未来假设（`FUTURE_HYPOTHESIS`）
 
-These hypotheses require public experiments, baselines, negative cases, and reproducible results.
+- 有证据支持的经验，可以在不同智能体或不同代际之间安全传递，同时避免传播过时或缺乏依据的结论。
+- 一个有明确边界的自主组件，可以被替换或绕过，同时不丢失实验脉络、验证记录和回滚能力。
+- 多个受约束的系统可以共同形成不断增长的能力，而不依赖某个无法替代的中央控制器。
 
-## Problems I want to solve in autonomous discovery systems
+这些设想还需要更多公开实验、对照基线、失败案例和可复现结果来验证。
 
-- Who performed an experiment, and under which model, tools, environment, and configuration?
-- What happened during execution, and can another system verify it independently?
-- Can results be reproduced after dependencies or environments change?
-- Did a candidate modification improve the system relative to a locked baseline?
-- Can failed experiments become scoped, revocable, reusable experience?
-- How should evidence, evaluation, authorization, and action remain separate?
+## 我想解决的问题
 
-My strongest public evidence is in **agents, infrastructure, and evaluations**. Environment capture is partial: I have not yet demonstrated a complete portable environment capsule or multi-environment conformance suite.
+- 一次实验是谁执行的？当时用了什么模型、工具、环境和配置？
+- 执行过程中发生了什么？另一个系统能不能独立复核？
+- 依赖或环境变化以后，结果还能不能重现？
+- 和锁定的基线相比，一项候选修改到底有没有让系统变得更好？
+- 失败实验能不能变成适用范围明确、可撤销、可复用的经验？
+- 怎样让证据、验证、评估、授权和行动彼此衔接，同时又不混为一谈？
 
-## Engineering approach
+我目前最扎实的公开证据集中在**智能体、基础设施和评估**。运行环境的记录仍不完整：我还没有展示完整、可移植的环境封装，也没有完成跨环境一致性测试套件。
 
-I prefer:
+## 我的工程方法
 
-- source-locked, reproducible artifacts;
-- explicit positive and negative tests;
-- content-addressed evidence and versioned identities;
-- visible failures and known limitations;
-- evaluation before adoption;
-- fail-closed behavior when evidence or authority is missing;
-- clear separation between technical verification and authorization.
+我更看重这些原则：
+
+- 让来源和版本可以锁定，让结果可以复现；
+- 同时保留正向测试和失败测试；
+- 按内容生成唯一标识来保存证据，用版本管理身份；
+- 不隐藏失败，也不隐藏已知限制；
+- 修改进入系统之前，先做评估；
+- 缺少证据或权限时，默认停止，而不是自行放行；
+- 把技术验证和行动授权分开处理。
 
 ```text
-observation != evidence
-evidence != verification
-verification != evaluation
-evaluation != authorization
-authorization != decision
-decision != execution
-specification != implementation
+观察不等于证据
+证据不等于验证
+验证不等于评估
+评估不等于授权
+授权不等于决定
+决定不等于执行
+规范不等于实现
 ```
 
-A passing test, CI run, release, DOI, or successful demo supports only the artifact and scope it directly checks. It does not by itself establish scientific truth, production readiness, external adoption, or permission to act.
+一次测试通过、一次 CI 成功、一个版本发布、一个 DOI 或一个 Demo 跑通，只能支持它直接检查的对象和范围。它们本身不能证明科学结论已经成立、系统已经生产就绪、外部已经采用，或者系统已经获得行动许可。
 
-## Research ownership and AI-assisted implementation
+## 研究责任与 AI 辅助开发
 
-I use AI coding agents as implementation and review tools. Research questions, experiment design, acceptance criteria, architectural decisions, evidence interpretation, failure analysis, and authorization decisions remain human-owned.
+我会使用 AI 编码智能体协助实现和复核，但研究问题、实验设计、验收标准、架构决策、证据解释、失败分析和授权决定，仍由人来负责。
 
-I use reproducible artifacts, negative cases, decision records, and explicit limitations to make that ownership inspectable.
+我会尽量用可复现材料、失败案例、决策记录和明确的限制说明，让这些责任可以被外部检查。
 
 ---
 
-Audit snapshot: 2026-08-08. Claims should be rechecked when repository revisions, dependencies, CI, or visibility change.
+最近一次审计快照：2026 年 8 月 8 日。仓库版本、依赖、CI 或可见范围发生变化后，以上结论都需要重新核对。
