@@ -38,6 +38,63 @@ SAEE 是一套实验性基础设施，用来评估智能体的健康状态，并
 - **已有证据：** 审计版本中的公开契约检查已经通过。
 - **还不能说明：** 契约检查通过，不等于已经拥有完整的自主运行时，也不代表系统具备独立决策权。
 
+## 精选论文
+
+这里仅列状态清楚、可以通过 DOI 公开核验的成果。
+
+### 论文一：已在线发表
+
+**[A Minimal UDI-DICOM Mapping Profile and Validation Artifact for Medical-Device Imaging Workflows](https://doi.org/10.1007/s10278-026-02019-6)**
+
+- **期刊：** *Journal of Imaging Informatics in Medicine*
+- **状态：** 已在线发表（`ONLINE_PUBLISHED`）。
+- **在线发表日期：** 2026 年 5 月 27 日。
+- **DOI：** [`10.1007/s10278-026-02019-6`](https://doi.org/10.1007/s10278-026-02019-6)
+- **公开阅读：** [Springer Nature SharedIt 只读全文](https://rdcu.be/fk6Qd)
+- **研究内容：** 提出一个最小 UDI-DICOM 映射框架和可复现验证材料，用于检查医疗设备身份与影像元数据之间的证据关系。
+- **边界：** 研究使用的是有边界的合成场景和验证材料，不代表临床验证、监管批准或医院部署。
+
+### 论文二：已在线发表
+
+**[A Bounded Public DICOM Metadata Audit for UDI-DICOM Evidence Readiness in Medical Imaging Workflows](https://doi.org/10.1007/s10278-026-02164-y)**
+
+- **期刊：** *Journal of Imaging Informatics in Medicine*
+- **状态：** 已在线发表（`ONLINE_PUBLISHED`）。
+- **DOI：** [`10.1007/s10278-026-02164-y`](https://doi.org/10.1007/s10278-026-02164-y)
+- **在线发表日期：** 2026 年 7 月 29 日。
+- **研究内容：** 对有限范围的公开 DICOM 元数据进行证据就绪度审计，并使用正向对照和可复现材料解释观察结果。
+- **边界：** 样本结果不能代表所有公开 DICOM 数据，也不构成临床验证、监管批准或真实医院部署证据。
+
+相关公开参考实现：[UDI-DICOM Evidence Validator](https://github.com/joy7758/udi-dicom-evidence-validator)。它是研究方向的验证工具，不是医疗诊断、临床安全或监管认证系统。
+
+## 已合并的外部开源贡献
+
+下面只列已经由外部仓库确认合并的代表性 PR。PR 被合并，说明这项具体贡献进入了对方仓库；不等于对方正式采用了我的全部项目或研究框架。
+
+### Microsoft Agent Governance Toolkit
+
+- [#1319：增加外部操作责任证据映射说明](https://github.com/microsoft/agent-governance-toolkit/pull/1319)
+  把 AGT 运行证据与外部责任证据档案之间的关系说明清楚；已于
+  2026 年 4 月 22 日合并。
+- [#1370：增加 AuditEntry 责任证据导出示例](https://github.com/microsoft/agent-governance-toolkit/pull/1370)
+  基于真实 `AuditService / AuditEntry` 输出给出最小、稳定的外部导出示例；
+  已于 2026 年 4 月 24 日合并。
+
+### AgentTrust ca2a
+
+- [#76：补充无效委托签名的一致性测试](https://github.com/agentrust-io/ca2a/pull/76)
+  增加 `ACTION-008` 必须级测试，确保无效签名先被判定为来源证据无效；
+  已于 2026 年 8 月 3 日合并。
+
+### LangChain 文档生态
+
+- [#2991：加入 langchain-pop 中间件集成](https://github.com/langchain-ai/docs/pull/2991)
+- [#2992：加入 langchain-aro 执行完整性材料](https://github.com/langchain-ai/docs/pull/2992)
+- [#3130：加入 Agent Evidence 集成入口](https://github.com/langchain-ai/docs/pull/3130)
+
+三项外部集成文档已于 2026 年 8 月 5 日至 6 日合并，让相关工具可以从
+LangChain 官方文档中被发现和使用。
+
 ## 我怎样区分项目成熟度
 
 为了避免把“做出来了”“跑过一次”和“已经成熟”混在一起，我会明确区分下面几种状态。
@@ -125,4 +182,4 @@ TITMAS 不是 DCELL 的中央控制器。它是一项早期工程实验，应该
 
 ---
 
-最近一次审计快照：2026 年 8 月 8 日。仓库版本、依赖、CI 或可见范围发生变化后，以上结论都需要重新核对。
+项目成熟度最近一次审计快照：2026 年 8 月 8 日；论文和外部 PR 状态最近一次核验：2026 年 8 月 15 日。仓库版本、依赖、CI 或可见范围发生变化后，以上结论都需要重新核对。
