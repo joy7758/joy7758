@@ -18,6 +18,38 @@
 6. [Digital Biosphere Architecture](https://github.com/joy7758/digital-biosphere-architecture-specification)——项目群治理与架构依据。
 7. [RedCrag](https://redcrag.cn/)——面向公众的网站入口。
 
+## 精选论文入口
+
+1. 论文一：
+   `A Minimal UDI-DICOM Mapping Profile and Validation Artifact for
+   Medical-Device Imaging Workflows`
+   - journal: `Journal of Imaging Informatics in Medicine`
+   - status: `ONLINE_PUBLISHED`
+   - DOI: `10.1007/s10278-026-02019-6`
+   - public_url: `https://doi.org/10.1007/s10278-026-02019-6`
+   - view_only_full_text: `https://rdcu.be/fk6Qd`
+2. 论文二：
+   `A Bounded Public DICOM Metadata Audit for UDI-DICOM Evidence Readiness in
+   Medical Imaging Workflows`
+   - journal: `Journal of Imaging Informatics in Medicine`
+   - status: `ONLINE_PUBLISHED`
+   - DOI: `10.1007/s10278-026-02164-y`
+   - public_url: `https://doi.org/10.1007/s10278-026-02164-y`
+   - published_online: `2026-07-29`
+
+相关公开参考实现：[UDI-DICOM Evidence Validator](https://github.com/joy7758/udi-dicom-evidence-validator)。该实现不创建临床验证、监管批准、医疗诊断或医院部署结论。
+
+## 已合并的外部 PR 入口
+
+- `microsoft/agent-governance-toolkit#1319`：外部操作责任证据映射说明；`MERGED`；2026-04-22。
+- `microsoft/agent-governance-toolkit#1370`：基于 `AuditService / AuditEntry` 的最小责任证据导出示例；`MERGED`；2026-04-24。
+- `agentrust-io/ca2a#76`：无效委托签名的 `ACTION-008` 必须级一致性测试；`MERGED`；2026-08-03。
+- `langchain-ai/docs#2991`：`langchain-pop` 集成文档；`MERGED`；2026-08-05。
+- `langchain-ai/docs#2992`：`langchain-aro` 集成文档；`MERGED`；2026-08-05。
+- `langchain-ai/docs#3130`：Agent Evidence 集成入口；`MERGED`；2026-08-06。
+
+以上 PR 的“已合并”只证明对应贡献进入了外部仓库，不证明这些仓库正式采用了张斌的全部项目、协议、研究主张或产品。
+
 ## 项目之间的关系
 
 - `DBA` 负责项目群治理与架构规范。
@@ -52,6 +84,8 @@ DBA 不等于 DBOS，也不等于 SAEE
 - 规范存在，不等于对应实现已经完成。
 - 仓库公开，不等于外部已经采用。
 - 论文处于投稿、编辑处理或评审阶段，不等于已经接收或发表。
+- 论文已接收，不等于已经分配 DOI 或在线发表。
+- 外部 PR 已合并，不等于上游正式采用整套项目、协议或研究结论。
 - 私有扩展支持的完整路径，不能描述成只凭公开仓库即可独立复现。
 
 ## 研究责任与 AI 使用
