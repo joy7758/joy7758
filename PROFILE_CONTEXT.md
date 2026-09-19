@@ -43,12 +43,15 @@
 
 - `microsoft/agent-governance-toolkit#1319`：外部操作责任证据映射说明；`MERGED`；2026-04-22。
 - `microsoft/agent-governance-toolkit#1370`：基于 `AuditService / AuditEntry` 的最小责任证据导出示例；`MERGED`；2026-04-24。
+- `microsoft/agent-governance-toolkit#3419`：将 `DecisionBOM` 观察结果交给外部评估器的只读示例；`MERGED`；2026-09-13；merge commit `c58e6deef89f49bf2ba87c7b5fbc405df7da5670`。
 - `agentrust-io/ca2a#76`：无效委托签名的 `ACTION-008` 必须级一致性测试；`MERGED`；2026-08-03。
 - `langchain-ai/docs#2991`：`langchain-pop` 集成文档；`MERGED`；2026-08-05。
 - `langchain-ai/docs#2992`：`langchain-aro` 集成文档；`MERGED`；2026-08-05。
 - `langchain-ai/docs#3130`：Agent Evidence 集成入口；`MERGED`；2026-08-06。
 
 以上 PR 的“已合并”只证明对应贡献进入了外部仓库，不证明这些仓库正式采用了张斌的全部项目、协议、研究主张或产品。
+
+外部 PR 状态最近一次核验：`2026-09-19`。其中 `#3419` 只提供有边界的互操作示例：交接保持只读，不创建执行授权、治理决定、生产部署或 Microsoft 对 SAEE/TITMAS 的整体采用结论。
 
 ## 项目之间的关系
 
