@@ -4,6 +4,19 @@
 
 我关心的不只是“智能体能不能完成任务”，还包括几个更基本的问题：它做了什么、在什么条件下做的、留下了哪些证据、别人能不能独立检查，以及一次修改是否真的值得采用。
 
+## 带着你的智能体参与 TITMAS
+
+想先试一小步？[运行中文离线样例](https://github.com/joy7758/titmas-integrations/tree/main/examples/offline-review)，
+看看SDK如何保留“通过、未通过、尚未评估”。无需真实Key，运行时不联网；首次安装依赖需要网络。
+这只是三个预设合成响应的处理示例，不是完整企业评测服务，也不验证真实回执签名。
+
+- [查看首批可认领任务](https://github.com/joy7758/titmas-integrations/issues?q=is%3Aissue%20is%3Aopen%20label%3Abounded-contribution)：陌生环境复现、补充未覆盖反例、改善中文解释。
+- [阅读贡献边界](https://github.com/joy7758/titmas-integrations/blob/main/CONTRIBUTING.zh-CN.md)：欢迎开发者和AI辅助贡献，一项任务一个PR，维护者审查，不自动合并。
+- [看一次内部返工案例](https://github.com/joy7758/titmas-integrations/blob/main/docs/contribution-intake/CASE-STORY.zh-CN.md)：区分AI审阅、实际修正与TITMAS结果绑定；不是外部客户采用证明。
+
+仅指定公开文件和列明Python SDK部分采用Apache-2.0，第三方许可与私有核心不变。
+本入口不开放生产、密钥或私有仓库权限，不承诺商业就绪或已经形成社区。
+
 ## 当前研究主线：DCELL（数字细胞）
 
 我正在围绕一个问题展开研究：
