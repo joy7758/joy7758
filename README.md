@@ -4,19 +4,6 @@
 
 我关心的不只是“智能体能不能完成任务”，还包括几个更基本的问题：它做了什么、在什么条件下做的、留下了哪些证据、别人能不能独立检查，以及一次修改是否真的值得采用。
 
-## 带着你的智能体参与 TITMAS
-
-想先试一小步？[运行中文离线样例](https://github.com/joy7758/titmas-integrations/tree/main/examples/offline-review)，
-看看SDK如何保留“通过、未通过、尚未评估”。无需真实Key，运行时不联网；首次安装依赖需要网络。
-这只是三个预设合成响应的处理示例，不是完整企业评测服务，也不验证真实回执签名。
-
-- [查看首批可认领任务](https://github.com/joy7758/titmas-integrations/issues?q=is%3Aissue%20is%3Aopen%20label%3Abounded-contribution)：陌生环境复现、补充未覆盖反例、改善中文解释。
-- [阅读贡献边界](https://github.com/joy7758/titmas-integrations/blob/main/CONTRIBUTING.zh-CN.md)：欢迎开发者和AI辅助贡献，一项任务一个PR，维护者审查，不自动合并。
-- [看一次内部返工案例](https://github.com/joy7758/titmas-integrations/blob/main/docs/contribution-intake/CASE-STORY.zh-CN.md)：区分AI审阅、实际修正与TITMAS结果绑定；不是外部客户采用证明。
-
-仅指定公开文件和列明Python SDK部分采用Apache-2.0，第三方许可与私有核心不变。
-本入口不开放生产、密钥或私有仓库权限，不承诺商业就绪或已经形成社区。
-
 ## 当前研究主线：DCELL（数字细胞）
 
 我正在围绕一个问题展开研究：
@@ -34,22 +21,6 @@ DCELL 目前仍处于**研究方向**（`RESEARCH_DIRECTION`）阶段，不是�
 - **目前进展：** 最小公开路径已有实验支持（`EXPERIMENTALLY_SUPPORTED`）；更完整的路径仍是原型（`PROTOTYPE`）。
 - **已有证据：** 在 2026 年 8 月 8 日的审计中，最小路径成功运行；当时对应版本的公开构建和验证检查也可以查看。
 - **还不能说明：** 完整版和企业版路径依赖私有扩展，无法只凭公开仓库独立复现。
-
-### [SAEE](https://github.com/joy7758/SAEE)
-
-SAEE 是一套实验性基础设施，用来评估智能体的健康状态，并比较候选修改到底带来了改善，还是引入了新的问题。
-
-- **目前进展：** 已有实验支持（`EXPERIMENTALLY_SUPPORTED`）。
-- **已有证据：** 审计版本通过了 84 项本地单元测试、一次基础整合测试和一个有边界的公开演示。
-- **还不能说明：** 当时的公开版本没有提供用于运行源代码测试的 CI；这些结果不代表系统已经能够自主改进，也不代表已经可以投入生产。
-
-### [TITMAS Agent Action Gate](https://github.com/joy7758/titmas-agent-action-gate)
-
-这个项目研究怎样根据证据约束智能体的行动，并明确记录负面证据和授权边界。
-
-- **目前进展：** 已测试的契约层已经实现（`IMPLEMENTED`）；更广泛的运行时治理仍只有实验支持（`EXPERIMENTALLY_SUPPORTED`）。
-- **已有证据：** 审计版本中的公开契约检查已经通过。
-- **还不能说明：** 契约检查通过，不等于已经拥有完整的自主运行时，也不代表系统具备独立决策权。
 
 ## 精选论文
 
@@ -132,7 +103,6 @@ LangChain 官方文档中被发现和使用。
 
 ### 已实现（`IMPLEMENTED`）
 
-- `titmas-agent-action-gate` 中已经过测试的契约层。
 - [Persona Object Protocol](https://github.com/joy7758/persona-object-protocol)
   中经过测试、带版本的身份与人格对象能力。
 
@@ -141,14 +111,11 @@ LangChain 官方文档中被发现和使用。
 ### 已有实验支持（`EXPERIMENTALLY_SUPPORTED`）
 
 - `verifiable-agent-demo` 的最小公开执行证据路径。
-- `SAEE` 的智能体健康评估和候选修改评估路径。
-- 围绕 Action Gate 契约开展的证据治理实验。
 
 这表示有限范围的实验支持了有限范围的结论，不等于已经适用于所有场景，也不等于可以直接投入生产。
 
 ### 原型（`PROTOTYPE`）
 
-- [TITMAS Demo](https://github.com/joy7758/titmas-demo)：DCELL 研究方向的早期工程起点，也是第一个实验实例，用确定性的方式探索可观察、可验证、可评估健康状态的智能体执行。
 - `verifiable-agent-demo` 更完整的公开与私有整合路径。
 - [TEK](https://github.com/joy7758/tek-system)：用于压力测试和候选修改评估的早期原型。
 
