@@ -6,15 +6,15 @@
 
 ## 重点介绍｜AI开发交付审计官
 
-帮助使用 AI 开发的人核对交付成果：要求有没有漏做，完成说明是否有依据，返工后问题是否真正解决。
+**我们原创设计的 AI 开发验收 Skill，帮你检查 AI 写的程序有没有按要求完成。**
 
-使用流程：**审计 → 问题反馈 → 开发者返工 → 复验**。修复由开发者完成，保留旧失败记录，重新检查新版本。
+把需求和程序交给它，你会拿到一份问题清单：哪里漏做、哪里做错、建议改什么。让原来的 AI 或开发者修改后，再检查一次。Skill 就是给 AI 助手使用的一套工作步骤。
 
-一次预置缺陷的合成演示中，初版四项测试一过、三失败；返工一次后，原四项测试通过，另九项同范围诊断符合预期。这不是客户案例或盲测，也不保证发现全部缺陷。
+适合 AI 编程后的代码检查、交付前核对和修改后复查。目前已有验证来自 Mac＋Codex 本地环境；不能保证查出全部问题。
 
-当前仅在 **Mac＋Codex 本地环境**验证。公开仓库提供介绍、用法和合成案例，**不是完整 Skill 安装包**。
+公开仓库提供介绍、用法和我们用虚构订单制作的演示，**不含完整 Skill 安装包**。
 
-[产品介绍](https://github.com/joy7758/ai-delivery-auditor) · [使用方法](https://github.com/joy7758/ai-delivery-auditor/blob/main/docs/usage.md) · [案例审计摘录](https://github.com/joy7758/ai-delivery-auditor/blob/main/examples/order-summary/audit-excerpt.md)
+[产品介绍](https://github.com/joy7758/ai-delivery-auditor) · [怎么使用](https://github.com/joy7758/ai-delivery-auditor/blob/main/docs/usage.md) · [看检查案例](https://github.com/joy7758/ai-delivery-auditor/blob/main/examples/order-summary/audit-excerpt.md)
 
 ## 当前研究主线：DCELL（数字细胞）
 
