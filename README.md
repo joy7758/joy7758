@@ -6,15 +6,11 @@
 
 ## 重点介绍｜AI开发交付审计官
 
-**我们原创设计的 AI 开发验收 Skill，帮你检查 AI 写的程序有没有按要求完成。**
+**帮你发现 AI 开发跑偏，并把工作拉回原要求。**
 
-把需求和程序交给它，你会拿到一份问题清单：哪里漏做、哪里做错、建议改什么。让原来的 AI 或开发者修改后，再检查一次。Skill 就是给 AI 助手使用的一套工作步骤。
+我们原创设计的 Skill：对照你的要求，查漏做、查做错、查“没做好就说完成”，给出修改清单，改完后再检查。适合用 AI 做网站、脚本和小工具的人。
 
-适合 AI 编程后的代码检查、交付前核对和修改后复查。目前已有验证来自 Mac＋Codex 本地环境；不能保证查出全部问题。
-
-公开仓库提供介绍、用法和我们用虚构订单制作的演示，**不含完整 Skill 安装包**。
-
-[产品介绍](https://github.com/joy7758/ai-delivery-auditor) · [怎么使用](https://github.com/joy7758/ai-delivery-auditor/blob/main/docs/usage.md) · [看检查案例](https://github.com/joy7758/ai-delivery-auditor/blob/main/examples/order-summary/audit-excerpt.md)
+[了解它能帮你做什么](https://github.com/joy7758/ai-delivery-auditor) · [查看使用方法](https://github.com/joy7758/ai-delivery-auditor/blob/main/docs/usage.md)
 
 ## 当前研究主线：DCELL（数字细胞）
 
